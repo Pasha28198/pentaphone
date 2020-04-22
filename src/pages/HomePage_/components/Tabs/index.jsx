@@ -18,18 +18,22 @@ class Tabs extends Component {
 							<a href="/buy/phone?brand=apple">Ещё</a>
 						</div>
 						<div className={tabStyle.WrapperPanels}>
-							<If condition={Object.keys(topModels).length}>
-								<For each='item' index='index' of={ topModels.Apple }>
-									<DeviceItemCategory
-										key={index}
-										id={item.id}
-										img={item.images[0] && item.images[0].image.medium}
-										lazyImage={item.images[0] && item.images[0].image.medium}
-										title={item.name}
-										price={item.price}
-										ind={index}
-									/>
-								</For>
+							<If condition={topModels && Object.keys(topModels).length}>
+								{
+									topModels.Apple ? (
+										<For each='item' index='index' of={ topModels.Apple }>
+											<DeviceItemCategory
+												key={index}
+												id={item.id}
+												img={item.images[0] && item.images[0].image.medium}
+												lazyImage={item.images[0] && item.images[0].image.medium}
+												title={item.name}
+												price={item.price}
+												ind={index}
+											/>
+										</For>
+									) : null
+								}
 							</If>
 						</div>
 					</div>

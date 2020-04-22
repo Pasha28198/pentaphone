@@ -39,7 +39,7 @@
     "jest": "20.0.4",
     "markdown-to-jsx": "^6.7.0",
     "moment": "^2.22.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "normalize.css": "^7.0.0",
     "npm": "^5.8.0",
     "numeral": "^2.0.6",
@@ -103,7 +103,7 @@
     "build-local": "cross-env REACT_APP_URL=https://localhost:8000 npm run build",
     "test": "node scripts/test.js --env=jsdom"
   },
-  "proxy": "https://dev.resell.com.ua/",
+  "proxy": "https://pentaphone.herokuapp.com/api/v1/",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"

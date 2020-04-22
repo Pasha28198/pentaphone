@@ -47,6 +47,7 @@ class HomePage_ extends Component {
 		// fetch top element
 		getTopElement()
 			.then(({data}) => {
+				console.log({data})
 				this.setState({topModels: data})
 			})
 
@@ -96,18 +97,14 @@ class HomePage_ extends Component {
 				</div>
 				<BannerSlider/>
 				<FastMenu/>
-				<If condition={Object.keys(topModels).length}>
+				<If condition={topModels && Object.keys(topModels).length}>
 					<TopDevice
 						data={
-							[
-								...topModels.Apple,
-								...topModels.Samsung,
-								...topModels.Others
-							]
+							[ ...topModels.Others ]
 						}
 					/>
 				</If>
-				<If condition={Object.keys(topModels).length}>
+				<If condition={topModels && Object.keys(topModels).length}>
 					<Tabs
 						topModels={topModels}
 					/>

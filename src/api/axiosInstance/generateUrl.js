@@ -19,4 +19,4 @@ if (hostname === 'resell.com.ua') {
 	backendHost = 'https://dev.resell.com.ua' || 'http://localhost:8000'
 }
 
-export const API_ROOT = `${backendHost}/api/${apiVersion}`
+export const API_ROOT = `https://pentaphone.herokuapp.com/api/v1/`
