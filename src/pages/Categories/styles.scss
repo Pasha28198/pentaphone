@@ -1,0 +1,19 @@
+.wrap_wrap{
+  transition: all 0.5s;
+}
+.wrapperCategories {
+  display: flex;
+
+  justify-content: space-between;
+  padding-top: 36px;
+  flex-wrap: wrap;
+  max-width: 322px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px){
+  .wrapperCategories {
+    padding-top: 72px;
+    max-width: 440px;
+  }
+}
+

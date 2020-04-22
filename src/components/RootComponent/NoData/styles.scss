@@ -1,0 +1,26 @@
+.NoData {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 150px;
+
+  &>img {
+    width: 90px;
+    object-fit: cover;
+  }
+
+  &>h2 {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #5c6979;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  &>p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    color: #5c6979;
+  }
+}

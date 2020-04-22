@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "paths": {
+            "components": [ "src/components"],
+            "api": ["src/api"],
+            "pages": ["src/pages"],
+            "containers": ["src/containers"],
+            "actions": ["src/store/actions"],
+            "reducers": ["src/store/reducers"],
+            "src": ["src"],
+            "utills": ["src/utills"],
+            "assets": ["src/assets"]
+        }
+    }
+}

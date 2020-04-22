@@ -1,0 +1,20 @@
+.labelItem{
+  margin: 15px 11px;
+  padding-top: 23px;
+  height: 51px;
+  position: relative;
+  border-top: 1px solid hsla(240,2%,88%,.46);
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.3s;
+  font-weight: 100;
+  color: rgba(36,37,61,.46);
+}
+.disable{
+  height: 0px;
+  overflow: hidden;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  opacity: 1;
+}

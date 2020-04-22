@@ -1,0 +1,21 @@
+.block{
+  cursor: pointer;
+  width: 75px;
+  height: 50px;
+  display: inline-block;
+  background: #e7e9ec;
+  border-radius: 6px;
+  line-height: 50px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 1024px){
+  .block{
+    width: 120px;
+  }
+}

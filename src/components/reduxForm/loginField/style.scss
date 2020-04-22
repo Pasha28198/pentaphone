@@ -1,0 +1,62 @@
+@import "../../../assets/globalCss/styles";
+.error {
+  color: $red;
+  font-size: 9px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 5px;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 5px;
+  z-index: -1;
+}
+
+.wrapperField {
+  position: relative;
+}
+
+.wrapperInput {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  border-radius: 8px;
+  background: #F2F4F7;
+  border: 1px solid #F2F4F7;
+  overflow: hidden;
+  div {
+    max-width: 38px;
+    padding: 16px 8px 0 13px;
+    position: relative;
+    z-index: 1;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+    color: #7b90a1;
+    background: transparent !important;
+    position: absolute;
+    height: 48px;
+    width: 318px;
+    padding-left: 40px;
+    border-radius: 8px;
+    & ::placeholder {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: left;
+    }
+  }
+}
+.wrapperInput:hover{
+  border: 1px solid #A8B6C8;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #F2F4F7 !important; /* Цвет фона */
+  -webkit-text-fill-color: #999 !important; /* цвет текста */
+  color: #999 !important; /* цвет текста */
+}

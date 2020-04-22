@@ -1,0 +1,69 @@
+@import "../../../../../../assets/globalCss/styles";
+.verifyCode {
+  h5 {
+    font-weight: 400;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 0.88;
+    text-align: center;
+    color: #323b45;
+    margin-bottom: 22px;
+  }
+
+  > span {
+    font-family: LucidaGrande;
+    font-size: 16px;
+    text-align: center;
+    color: $red;
+  }
+
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+
+  &-inputs {
+    max-width: 280px;
+    margin: 18px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    input {
+      outline: none;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 3px;
+      background-color: rgba(231, 233, 236, 0.39);
+      border: none;
+    }
+  }
+
+  &-funcBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 12px!important;
+    text-align: left;
+    color: #489ce4;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+}
+.visible{
+  display: none;
+}
+.verify{
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s;
+}
+.full{
+  height: 180px;
+}
+.disabled{
+  color: gray;
+  cursor: auto;
+  opacity: 0.7;
+}

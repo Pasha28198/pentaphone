@@ -1,0 +1,39 @@
+.active{
+  border: 2px solid #FA2A00;
+}
+.btn{
+  outline: none;
+  -webkit-appearance: none;
+  background: rgba(168, 182, 200, 0.147702);
+  width: 97px;
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  color: #323B45;
+  font-weight: 300;
+  font-size: 12px;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.active{
+  background: #FFFFFF;
+  border: 2px solid #FA2A00;
+}
+.accept{
+  outline: none;
+  border: none;
+  color: white;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  background: #FA2A00;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 50px;
+}

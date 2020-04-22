@@ -1,0 +1,89 @@
+@import "../../../../../../assets/globalCss/styles";
+
+.searchPost {
+  display: block;
+  width: 320px!important;
+  height: 50px!important;
+  margin: 0 auto!important;
+  border-radius: 8px !important;
+  &:first-child{
+    background-color: #fa2a00 !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+  }
+  &:last-child{
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    color: #5c6979 !important;
+  }
+  &.aprove{
+    background-color: #FA2A00 !important;
+    color: #fff !important;
+  }
+}
+
+.wrapperSearchPost{
+  >button{
+    font-weight: 300!important;
+    font-size: 16px !important;
+  }
+}
+.ContactInfo {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 27px;
+  *{
+    transition: all 0.3s !important;
+  }
+
+  //&-price {
+  //  font-family: Roboto;
+  //  font-size: 20px;
+  //  font-weight: 500;
+  //  text-align: center;
+  //  color: $red;
+  //  margin-top: 45px;
+  //  margin-bottom: 35px;
+  //  >span {
+  //    font-size: 18px;
+  //    font-weight: normal;
+  //  }
+  //}
+}
+.saveData{
+  font-size: 13px;
+  font-weight: 300;
+  color: #4A90E2;
+  outline: none;
+  border: none;
+  background: none;
+}
+@media screen and (min-width: 720px){
+  .ContactInfo{
+    max-width: 400px;
+  }
+  .wrapperSearchPost{
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchPost{
+    width: 184px !important;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 35px;
+    &:first-child{
+      order:2 !important;
+    }
+  }
+}
+@media screen and (min-width: 1024px){
+  .wrapperSearchPost{
+    justify-content: flex-end;
+    >button{
+      margin: 0 !important;
+      width: 176px !important;
+      height: 40px !important;
+    }
+  }
+}

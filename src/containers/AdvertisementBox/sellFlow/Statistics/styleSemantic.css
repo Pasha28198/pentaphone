@@ -1,0 +1,21 @@
+.ui.secondary.pointing.menu .item {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    color: #a8b6c8;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.ui.segment {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border: none!important;
+    padding: 0!important;
+}
+
+.ui.secondary.pointing.menu .active.item {
+    border-color: #fa2a00!important;
+    color: #323b45!important;
+    font-weight: 300!important;
+}

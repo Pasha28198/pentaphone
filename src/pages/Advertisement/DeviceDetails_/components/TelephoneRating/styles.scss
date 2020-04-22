@@ -1,0 +1,95 @@
+.Rating {
+  margin: 0 20px;
+
+  &>h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    font-size: 23px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &>p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: center;
+
+    color: #5C6979;
+  }
+
+  &-block {
+    text-align: left;
+    margin-bottom: 40px;
+
+    &-item {
+      text-align: left;
+    }
+
+    &>div>h3 {
+      text-align: left;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      font-size: 15px;
+      margin: 40px 0 19px 0;
+      color: #3F4751;
+
+    }
+
+    &>p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+      font-size: 12px;
+      text-align: left;
+
+      color: #5C6979;
+    }
+  }
+}
+
+.status {
+  float: left;
+  margin-right: 8px;
+  width: 20px;
+}
+
+.ratingBox {
+  margin: 0 auto;
+  width: 135px;
+}
+
+.star {
+ margin-right: 5px;
+}
+
+.ratingNumber {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 14.5022px;
+  letter-spacing: 0.185786px;
+
+  color: #5C6979;
+}
+
+@media screen and (min-width: 720px) {
+  .Rating {
+    width: 670px;
+    margin: 80px auto 0;
+    padding-bottom: 40px;
+    border-bottom: 0.5px solid rgba(92, 105, 121, 0.5);
+
+    &-block {
+
+    }
+  }
+}

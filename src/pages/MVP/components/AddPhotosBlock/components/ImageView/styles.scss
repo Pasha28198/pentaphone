@@ -1,0 +1,93 @@
+.ImageView {
+  display: none;
+  position: relative;
+  z-index: 0;
+
+  .slick-arrow {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .ImageView {
+    display: block;
+    margin-top: 5px;
+    float: left;
+    width: 330px;
+    height: 260px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px #A8B6C8;
+    border-radius: 4px;
+    margin-right: 8px;
+
+    &-uploadImage {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      display: block;
+      margin: 97px auto 0;
+    }
+
+    &-uploadBtn {
+      padding-top: 9px;
+      border: 1px solid #F2F4F7;
+      box-sizing: border-box;
+      border-radius: 8px;
+      height: 40px;
+      background: #ffffff;
+      width: 256px;
+      display: block;
+      margin: 27px auto 0;
+      cursor: pointer;
+
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300!important;
+      outline: none;
+      text-align: center;
+      color: #A8B6C8;
+    }
+  }
+
+  .imageSlider {
+    width: 330px;
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .prevArrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transform: rotate(180deg);
+    z-index: 9999999;
+
+  }
+
+  .nextArrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    z-index: 9999999;
+  }
+
+  .borderSide {
+    z-index: 999999;
+    width: 100%;
+    height: 25.05px;
+    background: rgba(255, 255, 255, 0.57);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .rubbish {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -6px;
+    z-index: 999999999;
+  }
+}

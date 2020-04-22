@@ -1,0 +1,26 @@
+.inputEmailPace {
+  margin-bottom: 31px;
+  height: 50px;
+  width: 100% !important;
+}
+
+.ResetPasswordForm {
+  max-width: 320px;
+  margin: 0 auto;
+  >div {
+    >span {
+      bottom: -25px;
+    }
+  }
+
+  &>button {
+    background: #FA2A00;
+    border-radius: 8px;
+    height: 59px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+}

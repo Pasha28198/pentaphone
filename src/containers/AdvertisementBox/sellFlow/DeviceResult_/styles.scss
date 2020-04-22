@@ -1,0 +1,47 @@
+.deviceResult{
+  display: flex;
+  justify-content: center;
+}
+.selected{
+  width: 320px;
+  transition: width 0.4s;
+  transform: translate(28%);
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  align-items: center;
+  >img{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.3s;
+  }
+}
+.true{
+  width: 128px;
+  display: flex;
+  transform:translate(0);
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  >img{
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100px;
+  }
+}
+
+@media screen and(min-width: 1024px){
+  .selected{
+    transform: translate(60%);
+  }
+  .true{
+    width: 200px;
+    transform: translate(0%);
+    >img{
+      width: 130px;
+    }
+  }
+}

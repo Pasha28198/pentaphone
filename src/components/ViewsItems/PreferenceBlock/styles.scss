@@ -1,0 +1,28 @@
+.preferenceItem {
+    &>img {
+      float: left;
+      margin-right: 8px;
+      margin-top: 3px;
+    }
+
+    &>h2 {
+      margin-top: 25px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    &>p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 17px;
+      font-size: 12px;
+      margin: 0 0 0 23px;
+
+      color: #5C6979;
+    }
+  }

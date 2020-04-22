@@ -1,0 +1,22 @@
+.Price {
+  padding: 17px 20px 6px;
+  border-bottom: 0.5px solid #A8B6C8;
+
+  &>h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    margin: 0 0 17px;
+
+    color: #323B45;
+  }
+}
+
+
+@media screen and (min-width: 1350px) {
+  .Price {
+    display: none;
+  }
+}

@@ -1,0 +1,89 @@
+.FilterSide {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  right: -100vw;
+  z-index: 999;
+  transition: right 340ms cubic-bezier(0, 0, 0.2, 1), background-color 340ms 340ms;
+  overflow: scroll;
+}
+
+.FilterSide--open {
+   top: 0;
+   right: 0;
+   background-color: rgba(0,0,0,.5);
+}
+
+.FilterSide--close {
+  top: 0;
+  transition: right 340ms 340ms cubic-bezier(0, 0, 0.2, 1), background-color 340ms;
+}
+
+.FilterSide-main {
+  padding-bottom: 150px;
+  width: 90%;
+  min-height: 100vh;
+  margin-left: auto;
+  background: #ffffff;
+  border-left: 0.5px solid #A8B6C8;
+}
+
+.FilterSide-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 23px 20px;
+  border-bottom: 11px solid #f2f4f7;
+}
+
+.FilterSide-title>div>span {
+  margin-left: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #323B45;
+}
+
+.FilterSide-title>span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 14px;
+  text-align: right;
+  margin-top: 2px;
+  cursor: pointer;
+  color: #FA2A00;
+}
+
+@media screen and (min-width: 380px) {
+  .FilterSide-main {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .FilterSide-title {
+    display: none;
+  }
+  .FilterSide {
+    width: 370px;
+    right: 0;
+    top: 0;
+  }
+
+  .FilterSide:hover ~ body{
+    background: red;
+    overflow: hidden;
+  }
+}
+
+/*@media screen and (min-width: 1400px){*/
+  /*.FilterSide{*/
+    /*width: 340px;*/
+  /*}*/
+/*}*/

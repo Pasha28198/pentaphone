@@ -1,0 +1,166 @@
+@import "../../../../../assets/globalCss/styles";
+.wrapperBanner {
+  position: relative;
+  height: 170px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 21px 28px 15px;
+  overflow: hidden;
+  *{
+    transition: all 0.3s;
+  }
+  padding: 17px 21px 28px 15px;
+  *{
+    transition: all 0.3s;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+
+  }
+  img.logo {
+    width: 28px;
+    height: 28px;
+    display: none;
+  }
+  img[alt="user"]{
+    background: white;
+    border-radius: 31px;
+  }
+}
+.logoWrapperDesktop{
+  display: none;
+}
+.banner {
+  left: 0 !important;
+  top: 0px !important;
+  position: absolute !important;
+  z-index: -1;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 10;
+  max-width: 14px!important;
+  max-height: 14px!important;
+}
+
+.functionalPace {
+  font-family: Roboto;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: left;
+  color: white;
+  a {
+    color:white;
+    font-weight: normal;
+  }
+  .wrapperUserInfo{
+    position: absolute;
+    bottom: 17px;
+    left: 17px;
+    color: #ffffff;
+    h1{
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 2px;
+    }
+    p{
+      height: 14px;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  .wrapperRating{
+    width: 50px;
+    height: 14px !important;
+    display: flex;
+    margin: 0;
+    >div{
+      margin: 0 !important;
+    }
+    img{
+      width: 9px;
+      height: 9px;
+    }
+  }
+}
+@media screen and (min-width: 1024px){
+  .wrapperBanner {
+    height: auto;
+    padding-left: 55px;
+    .dropdown{
+      right: 35px;
+      left: auto;
+      bottom: 85px;
+      display: flex;
+      justify-content: center;
+      img{
+        width: 10px;
+      }
+    }
+    >a {
+      margin-top:40px;
+    }
+    >a:first-child{
+      margin: 0;
+    }
+    img.logo {
+      margin-bottom: 40px;
+      display: block;
+    }
+
+    >img:nth-child(4) {
+      display: none;
+
+    }
+  }
+  .banner {
+    display: none;
+  }
+  .logoWrapperDesktop{
+    display: block;
+    margin: 0;
+    h2 {
+      img{
+        width: 27px;
+        height: 27px;
+        margin-right:7px;
+      }
+      font-size: 30px;
+      line-height: 1.39;
+      font-weight: 300;
+      color: $red;
+      span{
+        color: #5c6979;
+      }
+    }
+  }
+  .functionalPace{
+    color:#5c6979;
+    a{
+      color: #5c6979;
+    }
+    .wrapperUserInfo{
+      position: absolute;
+      bottom: auto;
+      left: 130px;
+      top: 100px;
+      color: #323b45;
+    }
+    .wrapperRating{
+      bottom: auto;
+      left: 125px;
+      top:144px;
+    }
+  }
+}

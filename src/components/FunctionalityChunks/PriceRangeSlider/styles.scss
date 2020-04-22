@@ -1,0 +1,51 @@
+//@import '../../../../../../node_modules/react-input-range/lib/css/index.css';
+.form {
+  margin: 35px auto 10px auto;
+
+  @media (min-width: 800px) {
+    max-width: 100%;
+  }
+}
+
+.wrapperPrice {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 324px;
+
+  .result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &>div>input {
+      outline: none;
+      border: none;
+      background: #F2F4F7;
+      width: 85px;
+      height: 50px;
+      border-radius: 4px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      font-size: 20px;
+      text-align: center;
+
+      color: #566978;
+    }
+
+    &>div>span {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 12px;
+      margin-left: 8px;
+      color: #7B90A1;
+    }
+  }
+
+  &-btn {
+    margin-top: 55vh
+  }
+}

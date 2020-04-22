@@ -1,0 +1,79 @@
+.sliderWrapper{
+  position: relative;
+  margin-top: 50px;
+  >button{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: rgba(92,105,121,0.5);
+    width: 25px;
+    height: 32px;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    padding: 0;
+    padding-left: 5px;
+    >img{
+      width: 11px;
+      height: 17px;
+    }
+  }
+  >button:hover{
+    background: rgba(92,105,121,1);
+    display: flex;
+  }
+  >button:first-child{
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    left: 0;
+  }
+  >button:last-child{
+    padding-left: 0;
+    padding-right: 5px;
+    justify-content: flex-end;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    right: 0;
+    >img{
+      margin-bottom: 0px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.hidden{
+  display: none;
+}
+.visible{
+  display: none;
+}
+.BannerImage {
+  color: red;
+  width: 100%!important;
+}
+
+@media screen and (min-width: 720px) {
+  .BannerImage {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sliderWrapper{
+    margin-top: 60px;
+  }
+  .BannerImage {
+    width: 100%!important;
+    margin-top: 43px;
+  }
+  .visible{
+    display: flex;
+  }
+}

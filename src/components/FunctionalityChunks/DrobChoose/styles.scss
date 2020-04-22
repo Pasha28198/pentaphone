@@ -1,0 +1,77 @@
+.blockDropChoose {
+  padding: 16px 20px 18px;
+  border-bottom: 0.5px solid #A8B6C8;
+  max-height: 5000px;
+  overflow: hidden;
+  transition: all .340s;
+}
+
+.lable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &>span {
+    cursor: pointer;
+    font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     line-height: normal;
+     font-size: 14px;
+
+     color: #323B45;
+     }
+
+  &>svg {
+    pointer-events: none;
+    transition: all 0.340s;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+}
+
+.itemList {
+  display: flex;
+  margin: 0;
+  margin-bottom: 16px;
+
+  &>span {
+    cursor: pointer;
+    font-family: Roboto;
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    margin-left: 18px;
+    color: #5C6979;
+    transition: all 0.340s;
+
+    &:hover {
+      color: #FA2A00;
+    }
+  }
+}
+
+.load {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 23px;
+  display: block;
+  color: #4A90E2;
+
+  &>svg {
+    margin-left: 4px;
+    cursor: pointer;
+    transition: all 0.340s;
+  }
+}
+
+.data {
+  margin-top: 14px;
+}

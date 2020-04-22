@@ -1,0 +1,13 @@
+.mySells {
+  background: #F2F4F7;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 720px) {
+  .mySells {
+    padding-top: 84px;
+    background: #ffffff;
+  }
+}

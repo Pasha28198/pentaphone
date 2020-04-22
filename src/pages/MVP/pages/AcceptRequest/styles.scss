@@ -1,0 +1,41 @@
+.acceptRequest{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.titleBlock{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  >img{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+  }
+}
+.contentBlock{
+  display: block;
+  margin-left: 20px;
+  >p{
+    color: #323B45;
+    margin-bottom: 0;
+  }
+  >span{
+    color: #5C6979;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:last-child{
+      font-weight: 500;
+      color: #FA2A00;
+      margin: 0;
+
+      >span{
+        font-size: 10px;
+      }
+    }
+  }
+
+}

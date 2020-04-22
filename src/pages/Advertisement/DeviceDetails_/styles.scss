@@ -1,0 +1,374 @@
+
+@media screen and (min-width: 360px){
+  .swiperrrr {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .hideDesc {
+    display: none;
+  }
+}
+
+.wrapperSlider {
+  max-width: 360px;
+  margin: 0 auto;
+  position: relative;
+  height: 211px;
+  text-align: center;
+  line-height: 24px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  color: #323b45;
+
+  &-totalSlide {
+    position: absolute;
+    bottom: -10px;
+    right: 5px;
+    width: 33px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 #a8b6c8;
+  }
+
+  &-verify {
+    width: 249px;
+    text-align: center;
+    line-height: 24px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 #a8b6c8;
+    position: absolute;
+    bottom: -10px;
+    left: 11px;
+
+    &>img {
+      width: 10px;
+      height: 9px;
+      object-fit: contain;
+      margin-right: 5px;
+
+    }
+  }
+  .swiperrrr {
+    width: 500px;
+  }
+}
+.wrapperHeader{
+  padding-top: 40px;
+}
+.sliderSlick {
+  max-width: 100%;
+  height: 211px;
+  >button{
+    display: none !important;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    max-height: 211px;
+    pointer-events: none;
+  }
+}
+.wrapperName{
+  margin-top: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
+  span{
+    color: #323b45;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+.wrapperInfo{
+  box-shadow: 0 0 5px 0 #a8b6c8;
+  padding-bottom: 18px;
+  >span{
+    margin-left: 18px;
+    margin-top: 18px;
+    display: inline-block;
+  }
+}
+.wrapperGraph {
+  height: 150px;
+  margin-bottom: 40px;
+  background: rgba(249, 249, 250, 0.599723);
+}
+.middlePrice{
+  margin: 0;
+  padding-left: 18px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  span{
+    margin-left: 20px;
+    color: #fa2a00;
+
+  }
+}
+//.showMore{
+//  margin-top: 17px;
+//  margin-left: 18px;
+//  color: #4a90e2;
+//  img{
+//    margin-left: 7px;
+//  }
+//}
+.wrapperButton{
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  max-width: 320px;
+  >p{
+    font-size: 10px;
+    color: #566978;
+    margin: 0;
+    margin-bottom: 10px;
+    span{
+      color: #fa2a00;
+    }
+  }
+  .button{
+    height: 50px !important;
+    width: 100% !important;
+    border-radius: 8px !important;
+    color: white !important;
+    background-color: #fa2a00 !important;
+    font-size: 16px !important;
+  }
+}
+.secondSlick{
+  display: none;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  .imgWrapper{
+    width: 48px !important;
+    height: 40px !important;
+    margin: 5px;
+    padding: 0 !important;
+    border-radius: 8px!important;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 2px 0 #a8b6c8 !important;
+    overflow: hidden !important;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.swiperWrapper{
+  display: flex;
+  justify-content: center;
+  img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+  }
+}
+.swiperrrr{
+  >div{
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+.imgWrapperNoImage {
+  width: 100%;
+  height: 261px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.butCloseOutside{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 40px;
+  top: 40px;
+  display: none;
+  border: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.butClose{
+  background: none;
+  outline: none;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  padding-top: 6px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.wrapperBack{
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  span{
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+.btn{
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 100003;
+  display: none;
+}
+.arrowLeft{
+  transform: translate(-400px,-50%);
+  img{
+    transform: rotate(180deg);
+  }
+}
+.arrowRight{
+  transform: translate(400px,-50%);
+}
+@media screen and (min-width: 720px){
+  .imgWrapperNoImage {
+    width: 100%;
+    height: 261px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+@media screen and (min-width: 1024px){
+  .creatingDetailsBergain{
+    width: 670px;
+    margin: 0 auto;
+    .wrapperInfo{
+      box-shadow: none;
+    }
+  }
+  .wrapperButton{
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .btn{
+    display: block;
+  }
+  .butCloseOutside{
+    display: block
+  }
+  .wrapperBack{
+    >button{
+      display: none;
+    }
+  }
+  .swiperrrr{
+    width: 800px;
+  }
+}
+@media screen and (min-width: 1140px){
+  .wrapperInformation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imgWrapperNoImage {
+    width: 360px;
+  }
+  .wrapperSlider{
+    width: 320px;
+    margin: 0;
+  }
+  .wrapperHeader{
+    padding-top: 0;
+    margin-left: 50px;
+    width: 320px;
+    box-shadow: none;
+  }
+  .wrapperInfo{
+    box-shadow: none;
+    >span{
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+  .wrapperName{
+    padding-left:0;
+  }
+  .secondSlick{
+    display: block;
+  }
+}
+
+.swiperWrapper {
+}
+//  .wrapperDeviceCard {
+//    padding-top: 50px;
+//  }
+//  .wrapperDeviceCard {
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: center;
+//    margin: 0;
+//    &-verify{
+//      bottom: 0px;
+//      left: 5px;
+//    }
+//    &-totalSlide {
+//      bottom: 0;
+//    }
+//    &-details {
+//      margin: 0;
+//      display: flex;
+//      flex-direction: column;
+//      >*{
+//        margin: 0px;
+//      }
+//    }
+//  }
+//  .wrapperSlider {
+//    width: 300px;
+//    margin: 0;
+//    margin-right: 50px;
+//    height: 280px;
+//    .sliderSlick {
+//      height: 300px;
+//      img{
+//        object-fit: contain;
+//        width: 100%;
+//      }
+//    }
+//  }
+//
+//}
+//@media screen and (min-width: 1350px){
+//  .wrapperDeviceCard {
+//    .sliderSlick{
+//      >button{
+//        display: block !important;
+//      }
+//    }
+//  }
+//
+//}

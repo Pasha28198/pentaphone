@@ -1,0 +1,69 @@
+
+
+.MainFilterToolBar {
+
+  &-price {
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-width: 1350px) {
+  .MainFilterToolBar {
+
+    &-price {
+      display: block;
+
+      & > span:first-child {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 12px;
+        margin-right: 11px;
+        color: #5C6979;
+      }
+
+      &--space {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+        text-align: center;
+        padding: 0 6px;
+        color: #5C6979;
+      }
+
+      & > input {
+        cursor: pointer;
+        outline: none;
+        width: 59px;
+        height: 30px;
+        border: 1px solid #D1D9E2;
+        border-radius: 4px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 12px;
+        text-align: center;
+
+        color: #5C6979;
+
+        &::placeholder {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          font-size: 12px;
+          text-align: center;
+
+          color: #A8B6C8;
+        }
+      }
+    }
+  }
+}

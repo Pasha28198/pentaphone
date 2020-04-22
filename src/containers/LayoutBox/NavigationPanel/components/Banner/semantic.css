@@ -1,0 +1,8 @@
+@media screen and (min-width: 1024px){
+    .ui.simple.active.dropdown>.menu, .ui.simple.dropdown:hover>.menu{
+        left: -25px !important;
+    }
+    .dropDownItem{
+        color: #a8b6c8 !important;
+    }
+}

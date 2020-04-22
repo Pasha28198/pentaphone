@@ -1,0 +1,50 @@
+@import "../../../../assets/globalCss/styles";
+.category {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 8px;
+  width: 153px;
+  height: 155px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 #a8b6c8;
+  text-align: center;
+  margin-bottom: 17px;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  color: #323b45;
+
+  img {
+    margin: 0 auto 19px auto;
+    max-width: 100%;
+    max-height: 70%;
+  }
+
+  a:hover {
+    color: $red!important;
+  }
+}
+
+.disabled-link {
+  pointer-events: none;
+  cursor: no-drop;
+  opacity: 0.4;
+}
+@media screen and (max-width: 321px){
+  .category{
+    width: 140px;
+  }
+}
+@media screen and (min-width: 1024px){
+
+  .category{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+    font-size: 15px !important;
+  }
+
+}
+

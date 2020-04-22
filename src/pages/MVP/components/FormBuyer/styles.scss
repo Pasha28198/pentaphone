@@ -1,0 +1,48 @@
+.formBuyer{
+  >div{
+    width: 300px !important;
+    height: 50px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+
+    >div{
+      background: #F2F4F7;
+
+    }
+    span{
+      display: block;
+      margin-top: -11px;
+      margin-left: 5px;
+      bottom: -16px;
+    }
+    input{
+      padding-left: 20px;
+    }
+  }
+}
+.createAds{
+  outline: none;
+  -webkit-appearance: none;
+  margin: 0 auto;
+  margin-top: 60px;
+  border: none;
+  border-radius: 8px;
+  display: block;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-weight: 300;
+  background: #FA2A00;
+  font-size: 14px;
+}
+.white{
+  background: white;
+  color: #323B45;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

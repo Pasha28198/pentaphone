@@ -1,0 +1,22 @@
+.selected>.ui.list .selected>.list>.item, .selected>.ui.list>.item, ol.ui.list li, ul.ui.list li {
+    float: left!important;
+    padding: 0!important;
+}
+
+.wrapperSampleDisable>.ui.list .wrapperSampleDisable>.list>.item, .wrapperSampleDisable>.ui.list>.item, ol.ui.list li, ul.ui.list li {
+    padding: 0!important;
+}
+
+.ui.list .list>.item, .ui.list>.item, ol.ui.list li, ul.ui.list li {
+    padding: 0;
+    line-height: 0;
+}
+
+.ui.dropdown:not(.button)>.default.text {
+    font-weight: 300!important;
+}
+
+
+.ui.dropdown .menu {
+    margin: 16px 0px 0 -10px!important;
+}

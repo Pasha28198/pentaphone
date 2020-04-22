@@ -1,0 +1,174 @@
+.Card {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 168px;
+  padding: 20px 18px 20px;
+  border-bottom: 1px solid rgba(168, 182, 200, 0.5);
+
+  &-image {
+    width: 120px;
+    height: 120px;
+    margin-right: 21px;
+
+    &--main {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 0px 5px #A8B6C8;
+    }
+
+    &--favorite {
+      height: 15px;
+      width: 18px;
+      position: absolute;
+      left: 30px;
+      top: 31px;
+
+      &>img {
+        pointer-events: none;
+        height: 15px;
+        width: 18px;
+      }
+    }
+  }
+
+  &-name {
+    display: inline-block;
+    width: 182px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.1445px;
+    margin: 0 0 5px 0;
+    color: #323B45;
+  }
+
+  &-price {
+    margin: 0 0 12px 0;
+    font-family: Roboto;
+    line-height: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.102px;
+    color: #FA2A00;
+
+    &>span {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.136px;
+      margin-left: 4px;
+      color: #FA2A00;
+    }
+  }
+
+  &-textField {
+    line-height: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    color: #5C6979;
+  }
+}
+
+.image-lazy {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  filter: blur(25px);
+}
+
+.image--main {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.contentWrapper{
+  display: block;
+}
+@media screen and (min-width: 720px) {
+  .Card {
+    min-height: 192px;
+    padding-left: 9px;
+    padding-right: 0;
+
+    &-image {
+      width: 150px;
+      height: 150px;
+
+      &--main {
+        width: 150px;
+        height: 150px;
+        margin-right: 22px;
+      }
+
+      &--favorite {
+        height: 20px;
+        width: 20px;
+        background: #F7F8FA;
+        border-radius: 4px;
+        left: 97%;
+        top: 24px;
+
+        &>img {
+          margin: 3px 0 0 1px;
+        }
+      }
+    }
+
+    &-name {
+      width: auto;
+      font-weight: 400;
+      line-height: 21px;
+      font-size: 16px;
+      letter-spacing: 0.1445px;
+      margin: 0 0 2px 0;
+      max-width: 240px;
+    }
+
+    &-price {
+      font-weight: 500;
+      line-height: normal;
+      font-size: 20px;
+      margin: 0 0 8px 0;
+    }
+
+    &-textField {
+      margin: 0 0 6px 0;
+    }
+  }
+
+  .image-lazy {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    filter: blur(25px);
+  }
+
+  .image--main {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Card{
+    &-name {
+      width: auto;
+      max-width: none;
+    }
+  }
+}

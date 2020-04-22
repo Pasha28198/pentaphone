@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--&lt;!&ndash; Google Tag Manager &ndash;&gt;-->
+    <!--<script>-->
+        <!--(-->
+            <!--function(w,d,s,l,i) {-->
+                <!--w[l]=w[l]||[];-->
+                <!--w[l].push({-->
+                    <!--'gtm.start': new Date().getTime(),-->
+                    <!--event:'gtm.js'-->
+                <!--});-->
+                <!--var f=d.getElementsByTagName(s)[0],-->
+                    <!--j=d.createElement(s),-->
+                    <!--dl= l!='dataLayer' ? '&l='+l : '';-->
+                <!--j.async=true;-->
+                <!--j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;-->
+                <!--f.parentNode.insertBefore(j,f);-->
+    <!--})(window,document,'script','dataLayer','GTM-MTBT2C5');-->
+    <!--</script>-->
+    <!--&lt;!&ndash; End Google Tag Manager &ndash;&gt;-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css">
+    <style>
+      @keyframes Rotations {
+        100% {
+          transform: rotate(720deg);
+        }
+      }
+
+      #spinner {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        left: 50%;
+        top: 50%;
+      }
+      #spinner>svg {
+        animation: Rotations 2s linear;
+        animation-iteration-count: infinite;
+      }
+      .ui.page.modals{
+        background-color: rgba(92,105,121, .5)!important;
+      }
+    </style>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- Facebook Pixel Code -->
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=pixelID&ev=PageView&noscript=1"
+    /></noscript>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root">
+      </header>
+      <div id="spinner">
+        <svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <circle id="path-1" cx="30" cy="30" r="30"></circle>
+            <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+              <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+              <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+              <feColorMatrix values="0 0 0 0 0.660442591   0 0 0 0 0.71505306   0 0 0 0 0.784066752  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+            </filter>
+          </defs>
+          <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="spinner" transform="translate(-145.000000, -266.000000)">
+              <g id="Group-6" transform="translate(150.000000, 271.000000)">
+                <g id="Oval">
+                  <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                  <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="AndroidSpinnerDark" transform="translate(10.000000, 10.000000)" fill="#FA2A00">
+                  <path d="M38.6058044,27.3509009 C35.6763495,34.7592837 28.4500647,40 20,40 C8.9545,40 0,31.0455 0,20 C0,9.87481986 7.52447317,1.50670861 17.28656,0.182525817 L18.0313512,3.11275596 C9.56975608,4.08846541 3,11.2768548 3,20 C3,29.389 10.611,37 20,37 C27.2775824,37 33.4869285,32.4272516 35.911628,25.998165 L38.6058044,27.3509009 Z" id="Spinner"></path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div id="modal-root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script type="text/javascript" src="/static/js/bundle.js"></script></body>
+  <script
+          id="widget-wfp-script"
+          language="javascript"
+          type="text/javascript"
+          src="https://secure.wayforpay.com/server/pay-widget.js"
+  ></script>
+  <script type="text/javascript">
+	  var wayforpay = new Wayforpay();
+  </script>
+
+  <!--<noscript>-->
+    <!--<iframe-->
+            <!--src="https://www.googletagmanager.com/ns.html?id=GTM-MTBT2C5"-->
+            <!--height="0"-->
+            <!--width="0"-->
+            <!--style="display:none;visibility:hidden"-->
+    <!--&gt;-->
+    <!--</iframe>-->
+  <!--</noscript>-->
+  <!-- End Google Tag Manager (noscript) -->
+</html>

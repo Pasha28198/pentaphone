@@ -1,0 +1,66 @@
+@import "../../../../../assets/globalCss/styles";
+
+.AddNewComment {
+  &-add {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  &-text {
+    background: #F2F4F7;
+    border-radius: 4px;
+    resize: none;
+    height: 90px;
+    margin-bottom: 0px;
+    outline: none;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  &-text::placeholder{
+    font-weight: 300;
+    line-height: 17px;
+    font-size: 12px;
+    color: #7E848B;
+  }
+
+  &-btn {
+    background: $red!important;
+    height: 40px;
+    margin: 40px 5px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+  }
+}
+.emptyField{
+  position: absolute;
+  left: 10px;
+  top:95px;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fa2a00;
+}
+
+@media screen and (min-width: 720px) {
+  .AddNewComment {
+    &-btn {
+      height: 40px;
+      width: 240px;
+      margin: 40px 0 0 53%;
+    }
+  }
+}

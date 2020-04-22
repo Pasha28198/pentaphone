@@ -1,0 +1,72 @@
+.favorits{
+
+  section{
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .listDeviceWrapper{
+    margin-top: 50px;
+  }
+
+  >div:first-child{
+    justify-content: flex-start ;
+  }
+
+}
+
+@media screen and (min-width: 720px){
+  .favorits{
+
+    padding: 0 100px;
+
+    section{
+      max-width:none;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .favorits{
+    padding-left: 50px;
+    padding-right: 50px;
+
+    section{
+
+      img[alt="delete"]{
+        width: 50px !important;
+      }
+
+      .tab{
+        display: none;
+      }
+
+    }
+
+    .listDeviceWrapper{
+
+      display: block;
+
+      >div{
+        img[alt="delete"]{
+          width: 50px !important;
+        }
+
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: 1350px){
+  .favorits{
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .favorits{
+    padding-right: 50px;
+  }
+}

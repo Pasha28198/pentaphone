@@ -1,0 +1,77 @@
+.dropDownWrapper{
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  .complexInput{
+    position: relative;
+
+    >input{
+      -webkit-appearance: none;
+      outline: none;
+      border: none;
+      width: 100%;
+      height: 50px;
+      padding: 12px;
+      font-weight: 300;
+      background: #F2F4F7;
+      border-radius: 8px;
+      &::placeholder{
+        color: #7B90A1;
+      }
+    }
+
+    >img{
+      position: absolute;
+      top: 17px;
+      right: 16px;
+    }
+  }
+
+}
+.dropDown{
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 1;
+  background: white;
+  height: 0;
+  transition: height 0.3s;
+  overflow-y: scroll;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.dropButton{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    font-weight: 300;
+    background: #F2F4F7;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.active{
+  height: 200px;
+  border: 1px solid #96c8da;
+  border-top: none;
+}
+.noData{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1024px){
+  .wide{
+    width: 350px;
+  }
+}

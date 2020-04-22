@@ -1,0 +1,46 @@
+.WrapperPanels {
+  padding-top: 9px;
+}
+
+.wrapperT {
+  padding: 44px 5%;
+}
+
+.PanelTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &>h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+
+    color: #323B45;
+  }
+
+  &>span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 12px;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 0.002px;
+
+    color: #4A90E2;
+  }
+}
+@media screen and (min-width: 720px){
+  .PanelTitle {
+    &>h2 {
+      font-size: 20px;
+    }
+  }
+  .wrapperT{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

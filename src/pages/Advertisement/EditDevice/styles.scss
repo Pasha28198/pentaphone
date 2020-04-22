@@ -1,0 +1,62 @@
+.EditDeviceWrapper {
+  padding: 0 13px;
+
+  &> h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.185786px;
+    text-align: center;
+    color: #323B45;
+    margin-bottom: 36px;
+  }
+}
+
+.subBtn {
+  cursor: pointer;
+  display: block;
+  min-width: 310px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #FA2A00;
+  border-radius: 6px;
+  margin: 40px auto 27px auto;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+
+@media screen and(min-width: 720px){
+  .thumbnail {
+    display: none;
+  }
+}
+
+@media screen and(min-width: 780px) {
+  .imageWrapperEditDevice {
+    margin: 0 20px;
+    padding-right: 4px;
+    border-bottom: 1px solid rgba(168, 182, 200, 0.5);
+  }
+}
+
+@media screen and(min-width: 1024px){
+  .thumbnail {
+    display: none;
+  }
+
+  .subBtn {
+    cursor: pointer;
+    margin: 40px auto 111px auto;
+  }
+}

@@ -1,0 +1,36 @@
+.modalWindow_dec{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(151, 151, 151, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s;
+
+}
+.modalWindow_dec >div{
+  z-index: 10002;
+}
+.onClick_dec{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.open_dec{
+  opacity: 1;
+  z-index: 10000;
+}
+.black_dec{
+  background: #0f0f10;
+}
+.filter_dec{
+  display: block;
+}
+

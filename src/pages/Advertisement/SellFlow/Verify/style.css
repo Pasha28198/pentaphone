@@ -1,0 +1,35 @@
+.sliderVerify .slick-dots {
+    bottom: 100px!important;
+    left: 4px;
+ }
+
+.sliderVerify .slick-slider {
+    height: 400px;
+    position: static;
+}
+
+.slick-dots li button:before {
+    color: red;
+    content: '';
+    background: transparent;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid red;
+    text-align: center;
+    opacity: 1;
+}
+
+.slick-dots {
+    bottom: -3px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    border: 1px solid red;
+    background: red;
+}
+/*@media screen and (min-width: 1800px) {*/
+
+
+/*}*/

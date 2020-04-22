@@ -1,0 +1,67 @@
+.buttonDesk{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  *{
+    transition: all 0.3s;
+  }
+  button{
+    font-size: 14px;
+    outline: none;
+    background: white;
+    border: 1px solid #FA2A00;
+    color: #FA2A00;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .rework{
+    background: #FA2A00;
+    color: white;
+  }
+}
+.single {
+  justify-content: center;
+  .rework{
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 321px){
+  .single {
+    .rework{
+      width: 280px;
+    }
+  }
+}
+@media screen and(min-width: 720px) {
+  .buttonDesk{
+    justify-content: flex-end;
+    button{
+      border: none;
+      color: #FA2A00;
+      width: 150px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px;
+      background: white;
+    }
+    .rework{
+      color: #4A90E2;
+      background: none;
+    }
+  }
+  .single{
+    .rework{
+      width: 150px;
+    }
+  }
+
+}
+

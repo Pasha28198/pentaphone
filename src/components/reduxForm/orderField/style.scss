@@ -1,0 +1,51 @@
+@import "../../../assets/globalCss/styles";
+.error {
+  position: absolute;
+  color: $red;
+  text-align: left;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 300;
+  margin-left: 10px;
+  bottom: -19px;
+}
+
+.wrapperInput {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction:column;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #F2F4F7 !important;
+  justify-content: center;
+  div {
+    max-width: 38px;
+    padding: 16px 8px 0 13px;
+  }
+
+  input {
+    width: 317px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #F2F4F7 !important;
+    outline: none;
+    border: none;
+    padding-left: 11px;
+    max-width:280px;
+    font-weight: 300;
+    color: #323B45 !important;
+    ::placeholder {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: left;
+      color: #7b90a1;
+    }
+
+  }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #000 !important; /* цвет текста */
+    color: #000 !important; /* цвет текста */
+  }
+}

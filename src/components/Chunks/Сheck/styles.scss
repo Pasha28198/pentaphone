@@ -1,0 +1,107 @@
+.Check {
+  cursor: pointer;
+  margin: 0 21px;
+  max-height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.435s;
+  border: 0.5px solid #F2F4F7;
+
+  &-details {
+    background: #F2F4F7;
+    height: 40px;
+    padding: 0 7px 0 19px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+  }
+
+  &-details>span {
+    font-size: 14px;
+    letter-spacing: 0.165143px;
+
+    color: #323B45;
+
+    &:last-child>img {
+      transition: all 0.435s;
+      transform: rotate(90deg);
+      margin-left: 11px;
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
+
+
+.Check-userInfo {
+  border-top: 0.5px solid #A8B6C8;
+  padding: 27px 20px;
+
+  &>h2 {
+    font-size: 12px;
+    color: #323B45;
+    margin: 0 0 20px;
+  }
+
+  &>a {
+    display: block;
+    font-size: 13px;
+    margin: 0 0 19px;
+    text-decoration: none;
+    color: #4A90E2;
+  }
+
+  &>span {
+    font-size: 12px;
+
+    color: #5C6979;
+  }
+}
+
+.Check-prices {
+  margin: 0;
+  padding: 19px 22px 30px 20px;
+
+  &>li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 28px;
+    font-size: 12px;
+    color: #5C6979;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.Check-prices>li>span:first-child {
+  width: 214px;
+}
+
+.Check-prices>li>span:last-child {
+  width: 60px;
+  text-align: left;
+}
+
+@media screen and (min-width: 720px) {
+  .Check {
+    width: 630px;
+    margin: 0 auto;
+
+    &>section {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-userInfo {
+      width: 45%;
+      order: -1;
+      border-right: 0.5px solid #A8B6C8;
+      border-top: none;
+      margin: 15px 0 12px 0;
+      padding: 4px 20px;
+    }
+  }
+}

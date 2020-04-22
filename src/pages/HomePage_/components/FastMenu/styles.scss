@@ -1,0 +1,210 @@
+.FastMenu {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  &>h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    margin: 0 0 30px 20px;
+    color: #323B45;
+  }
+
+  &-select {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &-item {
+      margin-right: 20px;
+      width: 94px;
+      height: 50px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+    &-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 0.0022px;
+
+      color: #FFFFFF;
+      border-radius: 8px;
+    }
+
+    &-img {
+      float: right;
+    }
+  }
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70px;
+  height: 68px;
+  background: linear-gradient(0deg, #9068BE, #9068BE);
+  border-radius: 5px;
+
+  &>img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.sell {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70px;
+  height: 68px;
+  background: linear-gradient(0deg, #E62739, #E62739);
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.0022px;
+
+  color: #FFFFFF;
+  border-radius: 8px;
+
+  &>img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.auc {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70px;
+  height: 68px;
+  background: linear-gradient(0deg, #6ED3CF, #6ED3CF);
+  border-radius: 5px;
+
+
+  &>img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 360px){
+  .FastMenu{
+    .buy, .sell, .auc {
+      width: 92px;
+    }
+  }
+}
+@media screen and (min-width: 720px) {
+
+  .FastMenu-select-text {
+    display: inline;
+  }
+
+  .FastMenu {
+      &>h2 {
+        margin-left: 0;
+      }
+    &-select {
+      padding-left: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      &-text {
+        margin: 17px;
+      }
+    }
+
+  }
+
+  .sell {
+    width: 162px !important;
+    height: 52px;
+    flex-direction: row;
+
+
+
+    &>img {
+      display: inline;
+      float: right;
+      margin: 0;
+    }
+  }
+
+  .buy {
+    width: 162px !important;
+    height: 52px;
+    flex-direction: row;
+
+
+
+    &>img {
+      display: inline;
+      float: right;
+      margin: 0;
+    }
+  }
+
+  .auc {
+    width: 162px !important;
+    height: 52px;
+    flex-direction: row;
+
+    &>img {
+      display: inline;
+      float: right;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .FastMenu {
+    margin-right: 20px;
+    margin-left: 20px;
+    &-select{
+      &-text {
+        font-size: 19px;
+      }
+    }
+    >h2{
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (min-width: 1024px){
+  .FastMenu {
+    margin-left: 0;
+    margin-right: 0;
+    &>h2 {
+      font-size: 19px;
+    }
+  }
+  .FastMenu-select-text {
+    font-size: 19px;
+  }
+}

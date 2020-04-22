@@ -1,0 +1,90 @@
+.wrapperAuction{
+  width:320px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  *{
+    transition: all 0.3s;
+  }
+  h2{
+    height: 24px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: #323b45;
+  }
+  h3{
+    color: #323B45;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 70px;
+    img{
+      margin-right: 8px;
+    }
+  }
+  .imageWrapper{
+    padding: 18px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 210px;
+      height: 125px;
+    }
+  }
+  p{
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    color: #323b45;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0;
+  }
+  .withAuc{
+    color: #fff !important;
+    background-color: #fa2a00 !important;
+    height: 50px !important;
+    width: 100% ;
+    border:1px solid #fa2a00 !important;
+  }
+  .buttonWrapper{
+    display: block;
+  }
+  .withoutAuc{
+    color: #323b45 !important;
+    background-color: #fff !important;
+    height: 50px !important;
+    width: 100% ;
+    margin-bottom: 30px !important;
+    margin-top: 10px !important;
+
+  }
+}
+@media screen and (min-width: 1024px){
+  .wrapperAuction{
+    width: 670px;
+    .buttonWrapper{
+      display: flex;
+      justify-content: space-between;
+    }
+    .withoutAuc{
+      width: 300px !important;
+      margin-top: 0px !important;
+    }
+    .withAuc{
+      width: 300px !important;
+    }
+    >p{
+      width: 400px;
+      margin:0 auto;
+      margin-top: 30px;
+      margin-bottom: 80px;
+
+    }
+  }
+
+
+}

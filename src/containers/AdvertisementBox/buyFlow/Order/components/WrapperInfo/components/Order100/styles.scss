@@ -1,0 +1,85 @@
+.priceList{
+  display: block;
+  width: 100%;
+  margin-bottom: 33px;
+  margin-top: 33px;
+  border-top: 1px solid #A8B6C8;
+  padding-top: 30px;
+
+  .wrapper{
+
+
+    h3{
+      font-weight: 500;
+      font-size: 12px;
+      color: #323B45;
+    }
+
+    &>p{
+      display: flex;
+      justify-content: space-between;
+      color: #788995;
+      font-weight: 300;
+
+      >div{
+        font-weight: 400;
+        font-size: 14px;
+
+        span{
+          font-size: 12px;
+          line-height: 17px;
+        }
+      }
+
+      &>span{
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.imageArrow {
+  margin-left: 10px;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: 0.435s all;
+}
+
+.activeArrow {
+  transform: rotate(180deg);
+}
+
+
+.info {
+  heigth: 0;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.435s all;
+  opacity: 0;
+}
+
+.infoActive {
+  height: 246px;
+  opacity: 1;
+}
+
+.mainPrice {
+  &>div {
+    color: #201F1F;
+  }
+
+  &>span {
+    color: #FA2A00;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .priceList{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .wrapper{
+    width: 350px;
+  }
+}

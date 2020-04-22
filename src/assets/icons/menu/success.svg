@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>success</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1-Copy-45" transform="translate(-18.000000, -574.000000)" fill="#5C6979" fill-rule="nonzero">
+            <g id="auction" transform="translate(18.000000, 286.000000)">
+                <g id="success" transform="translate(0.000000, 288.000000)">
+                    <path d="M9,0 C4.03753846,0 0,4.03719231 0,9 C0,13.9628077 4.03753846,18 9,18 C13.9624615,18 18,13.9628077 18,9 C18,4.03719231 13.9624615,0 9,0 Z M14.0175,5.9985 L8.47903846,12.2292692 C8.34265385,12.3826154 8.15261538,12.4615385 7.96119231,12.4615385 C7.80923077,12.4615385 7.65657692,12.4116923 7.52884615,12.3099231 L4.06730769,9.54069231 C3.76892308,9.30219231 3.72046154,8.86638462 3.95930769,8.56765385 C4.19780769,8.26892308 4.63396154,8.22046154 4.93234615,8.45930769 L7.88053846,10.8176538 L12.9825,5.07807692 C13.2358846,4.79215385 13.6741154,4.76653846 13.9596923,5.02061538 C14.2456154,5.27503846 14.2715769,5.71257692 14.0175,5.9985 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

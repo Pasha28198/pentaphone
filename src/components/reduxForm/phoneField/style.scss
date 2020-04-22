@@ -1,0 +1,50 @@
+@import "../../../assets/globalCss/styles";
+.error {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 300;
+  color: $red;
+}
+
+.errorInput {
+  border: solid 1px $red;
+}
+
+.wrapperInput {
+  margin-bottom: 9px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #f6f7f8;
+
+  div {
+    max-width: 38px;
+    padding: 16px 8px 0 13px;
+    color: #a8b0b8;
+  }
+
+  input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-left: 3px;
+    max-width:280px;
+    ::placeholder {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: left;
+      color: #7b90a1;
+    }
+
+  }
+}
+
+.checked {
+  margin-top: 20px;
+  width: 11px;
+  height: 10px;
+  object-fit: contain;
+}

@@ -1,0 +1,64 @@
+.advertBody{
+  display: flex;
+  justify-content: start;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  >img{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 #a8b6c8;
+    margin-right: 20px;
+  }
+  h1{
+    color: #4A90E2;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  .contentWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    >p{
+      display: flex;
+      justify-content: space-between;
+      color: #323B45;
+      span{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        >span{
+          font-size: 10px;
+          margin-left: 4px;
+        }
+      }
+      img{
+        margin-right: 8px;
+      }
+      .hitCount{
+        font-weight: 300;
+        color: #5C6979;
+      }
+    }
+  }
+}
+@media screen and (min-width: 720px){
+  .advertBody{
+    padding-left: 20px;
+    padding-right: 20px;
+    h1{
+      font-size: 16px;
+      color: #4A90E2;
+    }
+    .contentWrapper{
+      >p{
+        justify-content: flex-start;
+        .hitCount{
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}

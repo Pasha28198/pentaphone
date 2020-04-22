@@ -1,0 +1,23 @@
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 1!important;
+  width: 6px!important;
+  height: 6px!important;
+}
+.swiper-pagination-bullet-active {
+  background: #FA2A00!important;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 10px!important;
+  left: 50%!important;
+  margin-left: -31px!important;
+  border-radius: 8px!important;
+  width: 73px!important;
+  height: 10px!important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0px 4px 6px!important;
+}
+

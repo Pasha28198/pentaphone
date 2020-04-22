@@ -1,0 +1,40 @@
+.ConfirmNewPassword {
+  text-align: center;
+
+  &>h1 {
+    font-family: Roboto;
+    line-height: 17px;
+    font-size: 16px;
+    text-align: center;
+    color: #323B45;
+    margin-bottom: 38px;
+  }
+
+  &>p{
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+    font-size: 10px;
+    text-align: center;
+    color: #5C6979;
+    margin-top: 22px;
+    >a{
+      color: #4A90E2;
+      text-decoration: none;
+    }
+  }
+
+  &>span {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #323B45;
+    margin-top: 105px;
+  }
+}

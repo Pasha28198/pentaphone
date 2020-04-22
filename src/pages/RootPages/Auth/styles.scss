@@ -1,0 +1,65 @@
+.Auth {
+  section{
+    max-width: 320px;
+    margin: 25px auto 0 auto;
+  }
+}
+.abs{
+  padding-top: 56px;
+}
+
+.labelInWith {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #323b45;
+  margin-bottom: 17px;
+  margin-top: 0;
+}
+
+.wrapperSignInWith {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 320px;
+  margin: 0 auto;
+
+  > button {
+    height: 50px;
+    width: 150px;
+  }
+}
+
+@media screen and ( min-width: 720px ) {
+  .Auth {
+    section {
+      max-width: 402px;
+    }
+  }
+
+  .wrapperSignInWith {
+    width: 600px;
+
+    > button {
+      width: 240px;
+    }
+  }
+
+}
+
+@media screen and ( min-width: 1024px ) {
+
+  .wrapperSignInWith {
+    width: 640px;
+    > button {
+      width: 290px;
+    }
+  }
+}
+@media screen and (min-width: 1900px){
+  .Auth {
+    margin-bottom: 150px;
+  }
+}
+
+

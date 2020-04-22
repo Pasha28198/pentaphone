@@ -1,0 +1,128 @@
+.footerWrapper {
+  width: 100%;
+  margin-top: 40px;
+  left: 0;
+  bottom: 0;
+  position: relative;
+  z-index: 8;
+  article{
+    display: none;
+    width: 670px;
+    flex-direction: column;
+    padding-top: 27px;
+    margin: 0 auto;
+    section{
+      display: flex;
+      justify-content: space-between;
+    }
+    .columnWrapper{
+      padding-bottom: 25px;
+      div{
+        margin: 0;
+        width: 25%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+          font-size: 16px;
+          font-weight: normal;
+          color: #323b45;
+        }
+
+        a{
+          color: #5c6979;
+          font-size: 14px;
+          font-weight: 300;
+          margin-bottom: 5px;
+        }
+
+        a:hover{
+          color: #fa2a00;
+        }
+
+        img{
+          width: 76px;
+          &:first-child{
+            margin-bottom: 25px;
+          }
+        }
+
+        &:last-child{
+          align-items: flex-end;
+
+        }
+      }
+    }
+  }
+  .downPart{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    border-top: 1px solid #d7dade;
+    height: 67px;
+    >div:first-child{
+      width: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        font-size: 16px;
+        font-weight: 300;
+      }
+      img{
+        width: 22px;
+      }
+    }
+    >div:last-child{
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p{
+        margin: 0;
+        font-size: 11px;
+        font-weight: 300;
+      }
+      >div{
+        width: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 15px;
+          img{
+            height: 100%;
+          }
+        }
+      }
+    }
+
+  }
+}
+@media screen and (min-width: 1024px){
+  .footerWrapper{
+    padding-left: 329px;
+    height: 243px;
+    border-top: 1px solid #d7dade;
+    article{
+      display: flex;
+    }
+  }
+}
+@media screen and (min-width: 1350px){
+  .footerWrapper{
+    display: none;
+    padding-right: 256px;
+  }
+}
+@media screen and (min-width:1400px){
+  .footerWrapper{
+    display: block;
+    padding-right: 340px;
+  }
+}
+

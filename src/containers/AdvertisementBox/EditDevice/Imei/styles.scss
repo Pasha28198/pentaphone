@@ -1,0 +1,142 @@
+.CheckList {
+  padding-bottom: 5px;
+  padding-right: 5px;
+  overflow: hidden;
+  border-bottom: 1px rgba(168, 182, 200, 0.5) solid;
+  height: 50px;
+  transition: all 0.443s;
+
+  &-desc {
+    display: none;
+  }
+
+  &-lable {
+    display: none;
+  }
+
+  &-leftSide {
+    width: 100%;
+    &>span {
+      display: none;
+    }
+  }
+
+  &-mob {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 14px;
+
+    color: #323B45;
+  }
+
+  &-imeiDisable {
+    height: 40px;
+    opacity: 0;
+    height: 0;
+  }
+
+  &-imeiActive {
+    transition: all 0.434s;
+
+    &>input {
+      width: 100%;
+      height: 50px;
+      margin: 8px 0 8px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      color: #5C6979;
+      padding-left: 15px;
+      background: #F2F4F7;
+      border-radius: 8px;
+    }
+
+    &> p {
+      line-height: 12px;
+      font-size: 10px;
+      max-width: 320px;
+      padding-bottom: 20px;
+      color: #7E848B;
+    }
+  }
+
+  &-active {
+    height: 161px!important;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .CheckList {
+    margin: 5px 20px 0;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+
+    &-leftSide {
+      width: 513px;
+
+      &>span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+        margin-left: 5px;
+        display: inline;
+        color: #7E848B;
+      }
+    }
+
+    &-lable {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 52px;
+      line-height: 52px;
+      float: left;
+    }
+
+      &-item {
+      width: 508px;
+    }
+
+    &-desc {
+      display: flex;
+      justify-content: space-between;
+
+      &>span {
+        margin-left: 12px;
+        font-size: 12px;
+        color: #7E848B;
+      }
+    }
+    &-mob {
+      display: none;
+    }
+
+    &-imeiActive {
+      transition: all 1s;
+
+      &>input {
+        width: 198px;
+        height: 40px;
+      }
+
+      &> p {
+        display: none;
+        line-height: 12px;
+        font-size: 10px;
+        max-width: 320px;
+        padding-bottom: 20px;
+        color: #7E848B;
+      }
+    }
+  }
+}

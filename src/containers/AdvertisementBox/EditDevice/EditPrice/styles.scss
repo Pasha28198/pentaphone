@@ -1,0 +1,62 @@
+.EditPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px rgba(168, 182, 200, 0.5) solid;
+  margin-top: 20px;
+  padding: 19px 5px 19px 0;
+
+  &>p {
+    line-height: 19px;
+    font-size: 14px;
+
+    color: #323B45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &-price {
+    &>input {
+      width: 98px;
+      height: 50px;
+      text-align: center;
+      color: #566978;
+      background: #F2F4F7;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      margin-right: 12px;
+    }
+
+
+    &>span {
+      font-size: 12px;
+
+      color: #7B90A1;
+    }
+  }
+}
+
+@media screen and (min-width: 780px){
+  .EditPrice {
+    border-top: none;
+    margin: 0 20px;
+
+    &>p{
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &-price {
+      width: 507px;
+
+      &>input {
+        margin-top: 36px;
+      }
+    }
+  }
+}

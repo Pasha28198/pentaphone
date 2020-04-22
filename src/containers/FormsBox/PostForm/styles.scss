@@ -1,0 +1,10 @@
+.descr{
+  font-size: 15px;
+  color: #323B45;
+}
+@media screen and (min-width: 1024px){
+  .postForm {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../../assets/globalCss/styles";
+.ContactInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  p {
+    text-align: left;
+    margin-bottom: 24px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #323B45;
+    >span{
+      color: #5C6979;
+      font-size: 12px;
+      font-weight: 300;
+      >span{
+        color: $red;
+      }
+    }
+  }
+
+  > button {
+    margin-top: 11px!important;
+    width: 100%;
+    height: 50px;
+    color: white!important;
+    border-radius: 3px;
+    background-color: $red!important;
+  }
+}
+.desc{
+  display: none;
+  margin-bottom: 0 !important;
+}
+.mob{
+  display: inline-block;
+  margin-bottom: 0 !important;
+  margin-left: 5px !important;
+}
+.verifyBox {
+  padding-top: 20px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 #a8b6c8;
+  margin: 5px 0;
+
+}
+@media screen and (min-width: 1024px){
+  .ContactInfo{
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+      text-align: left;
+      margin-bottom: 24px;
+      font-family: Roboto;
+      font-size: 14px;
+      color: #323B45;
+      >span{
+        display: inline-block;
+      }
+    }
+  }
+  .wrapper{
+    width: 350px;
+  }
+  .desc{
+    display: block;
+  }
+  .mob{
+    display: none;
+  }
+}

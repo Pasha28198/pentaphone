@@ -1,0 +1,75 @@
+@import "../../../../../assets/globalCss/styles";
+.CurrentPriceWrapper {
+  display: flex;
+  flex-direction: column;
+
+  &-price {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 46px;
+  }
+
+  &-value {
+    display: flex;
+
+    > input {
+      display: block;
+      margin-top: 20px;
+      position: relative;
+      width: 184px;
+      height: 50px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      font-size: 20px;
+      text-align: center;
+      outline: none;
+      border: none;
+      color: #566978;
+      background: #F2F4F7;
+      border-radius: 8px;
+      float: left;
+    }
+
+    &:after {
+      display: block;
+      content: 'грн';
+      width: 19px;
+      height: 14px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 12px;
+      margin-top: 36px;
+      margin-left: 10px;
+      color: #7B90A1;
+    }
+  }
+
+  &-range {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 8px;
+    text-align: center;
+    color: #566978;
+
+    > article {
+      text-align: center;
+      display: block;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 11px;
+      font-size: 10px;
+      color: #A8B6C8;
+      width: 76px;
+    }
+  }
+}

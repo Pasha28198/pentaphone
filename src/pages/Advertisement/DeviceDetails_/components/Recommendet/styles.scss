@@ -1,0 +1,86 @@
+.BestIphone {
+  margin: 0 20px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 0.5px solid rgba(92, 105, 121, 0.5);
+
+  &>h2 {
+    margin: 0 0 10px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 15px;
+
+    color: #323B45;
+  }
+
+  &>p {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 12px;
+    margin-bottom: 16px;
+
+    color: #5C6979;
+  }
+}
+
+.Best {
+  width: 150px;
+  margin-left: 22px;
+
+  &:first-child {
+    margin-left: 3px;
+  }
+
+  &>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: contain;
+    box-shadow: 0px 0px 5px #A8B6C8;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+
+  &-price {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: 0.102px;
+
+    color: #FA2A00;
+
+    &>span {
+      font-size: 12px;
+      margin-left: 5px;
+      color: #FA2A00;
+    }
+  }
+
+  &>div {
+    h3 {
+      margin: 0 0 7px 0;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 14px;
+      letter-spacing: 0.1445px;
+
+      color: #323B45;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .BestIphone {
+    width: 670px;
+    margin: 40px auto 0;
+  }
+}

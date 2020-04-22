@@ -1,0 +1,120 @@
+.newsSliderWrapper{
+  margin-top: 50px;
+  position: relative;
+  z-index: 3;
+
+  &-title {
+    padding: 0 19px 0 21px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &>h2 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 18px;
+      font-size: 16px;
+      color: #323B45;
+    }
+
+    &>a {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 12px;
+      font-size: 14px;
+      text-align: right;
+      letter-spacing: 0.002px;
+      color: #4A90E2;
+    }
+  }
+}
+
+.newsItemWrapper{
+  width: 260px !important;
+  padding: 10px;
+  &:first-child{
+    padding-left: 20px;
+    width: 286px !important;
+  }
+}
+.newsItem{
+  direction: ltr;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 #a8b6c8;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 8px;
+
+  >div{
+    position: relative;
+    width: 100%;
+    height: 156px !important;
+    overflow: hidden;
+    img{
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  }
+  span{
+    display: block;
+    padding:10px;
+    padding-bottom: 0;
+    font-size: 10px;
+    text-align: left;
+    color: rgba(31, 47, 66, 0.75);
+  }
+  h3{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    height: 65px;
+    color: #1f2f42;
+    margin:10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding-right: 10px;
+  }
+  p{
+    font-family: Roboto;
+    font-size: 12px;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(31, 47, 66, 0.75);
+    padding: 0 10px;
+  }
+  img{
+    width: 100%;
+  }
+
+}
+@media screen and (min-width: 720px){
+  .newsSliderWrapper{
+    &-title {
+      >h2{
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1350px) {
+  .newsSliderWrapper{
+    display: none;
+  }
+}

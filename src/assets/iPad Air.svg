@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1238px" height="1588px" viewBox="0 0 1238 1588" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>iPad Air</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="92.7119348%" y1="2.65455375%" x2="21.7820189%" y2="90.4198979%" id="linearGradient-1">
+            <stop stop-color="#DBDADE" offset="0%"></stop>
+            <stop stop-color="#DDDBDF" offset="48.1865325%"></stop>
+            <stop stop-color="#E8E6EA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="78.3344203%" y1="-3.96866299%" x2="16.8434909%" y2="95.9649442%" id="linearGradient-2">
+            <stop stop-color="#DDDDDD" offset="0%"></stop>
+            <stop stop-color="#000003" offset="3.0722195%"></stop>
+            <stop stop-color="#BFBDC3" offset="5.98850655%"></stop>
+            <stop stop-color="#EFEFF0" offset="33.5713241%"></stop>
+            <stop stop-color="#FBFBFB" offset="45.071334%"></stop>
+            <stop stop-color="#E4E3E6" offset="53.6294685%"></stop>
+            <stop stop-color="#BCBBBF" offset="77.3011735%"></stop>
+            <stop stop-color="#716E77" offset="87.2201881%"></stop>
+            <stop stop-color="#100F13" offset="90.7310059%"></stop>
+            <stop stop-color="#E7E5E9" offset="92.9100272%"></stop>
+            <stop stop-color="#030204" offset="95.1226059%"></stop>
+            <stop stop-color="#4D4B52" offset="97.0428678%"></stop>
+            <stop stop-color="#8D8A95" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-3" cx="7.5" cy="10" rx="5.35714286" ry="7.77777778"></ellipse>
+        <filter x="-51.3%" y="-36.7%" width="202.7%" height="173.3%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="3" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-6" cx="10.7142857" cy="15.5555556" rx="4.28571429" ry="6.66666667"></ellipse>
+        <filter x="-62.8%" y="-41.4%" width="225.5%" height="182.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="1.79332386" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-126.9%" y="-83.7%" width="353.9%" height="267.4%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="3" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M36.25,80 C49.3667635,80 60,63.7703232 60,43.75 C60,23.7296768 49.3667635,7.5 36.25,7.5 C23.1332365,7.5 12.5,23.7296768 12.5,43.75 C12.5,63.7703232 23.1332365,80 36.25,80 Z" id="path-9"></path>
+        <filter x="-11.6%" y="-7.6%" width="123.2%" height="115.2%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="3" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0659179688 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="3" dy="0" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0292681526 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="24.7804303%" y1="0%" x2="78.1152685%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#E5E5E5" stop-opacity="0.122328814" offset="0%"></stop>
+            <stop stop-color="#BDBDBD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="67.8421588%" y1="-3.32034455%" x2="14.8214566%" y2="100%" id="linearGradient-12">
+            <stop stop-color="#12387C" offset="0%"></stop>
+            <stop stop-color="#518BDD" offset="34.5942934%"></stop>
+            <stop stop-color="#AACDF7" offset="62.532926%"></stop>
+            <stop stop-color="#D0E0F4" offset="75.9526501%"></stop>
+            <stop stop-color="#60D28A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPad-Air" transform="translate(621.000000, 794.000000) scale(-1, 1) translate(-621.000000, -794.000000) ">
+            <g id="body">
+                <path d="M10.246162,1207.49179 C-4.19927595,1240.05028 9.08610014,1280.9028 39.9245577,1298.74116 L518.861868,1575.78013 C563.079741,1601.35775 615.12705,1583.97991 635.114499,1536.96161 L1235.48507,124.655174 C1253.30913,82.7260192 1230.90704,46.1108546 1185.46646,42.8741871 L589.520659,0.42581791 C566.110378,-1.24166307 539.414112,14.8032187 529.897172,36.2533947 L10.246162,1207.49179 Z" id="back" fill="url(#linearGradient-1)"></path>
+                <path d="M10.7882333,1202.9254 C-5.0625529,1238.79368 9.66497092,1283.66407 43.7065669,1303.15968 L514.606207,1572.84375 C554.148553,1595.48964 600.687467,1579.87617 618.560123,1537.95522 L1224.71139,116.205592 C1240.9555,78.1044376 1220.61777,44.9563617 1179.29492,42.1679084 L585.132355,2.07399661 C561.713547,0.493702487 535.036672,16.6190287 525.547678,38.0913959 L10.7882333,1202.9254 Z" id="border" fill="url(#linearGradient-2)"></path>
+                <path d="M12.045495,1205.81855 C-1.68052335,1236.88884 11.0680974,1275.79301 40.5206607,1292.71363 L516.622167,1566.23585 C550.139949,1585.49195 589.591455,1572.27248 604.744524,1536.69772 L1214.35833,105.511034 C1227.88367,73.7576792 1210.92947,46.1431125 1176.48896,43.8320974 L586.537567,4.24539575 C563.113937,2.67363191 536.437955,18.8006585 526.952406,40.2722036 L12.045495,1205.81855 Z" id="top-white" fill="#FAFAFA"></path>
+            </g>
+            <g id="camera" transform="translate(830.500000, 76.500000) rotate(14.000000) translate(-830.500000, -76.500000) translate(823.000000, 66.500000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Oval-2" transform="translate(7.500000, 9.722222) rotate(11.000000) translate(-7.500000, -9.722222) ">
+                    <use fill="#414141" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                </g>
+                <g id="Oval-2-copy" filter="url(#filter-7)" mask="url(#mask-4)" transform="translate(10.714286, 15.388889) rotate(11.000000) translate(-10.714286, -15.388889) ">
+                    <use fill="#2D7DDC" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-6"></use>
+                </g>
+            </g>
+            <g id="Home-button" transform="translate(240.500000, 1316.500000)">
+                <g id="Oval-1" transform="translate(36.250000, 43.750000) rotate(21.000000) translate(-36.250000, -43.750000) ">
+                    <use fill="#F5F4F6" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                </g>
+                <path d="M25.2011817,35.863227 C23.3746161,36.8010413 22.7278427,38.9803292 23.7468667,40.7580677 L32.2504516,55.5929986 C33.2780568,57.3857074 35.526177,57.9727147 37.2989735,56.9079291 L44.1911841,52.7682965 C45.9993336,51.6822771 46.6907492,49.2630123 45.7254436,47.3828848 L38.4780413,33.2671069 C37.5317288,31.4239723 35.2640195,30.69666 33.4191645,31.6438646 L25.2011817,35.863227 Z" id="Rectangle-5-copy" stroke="url(#linearGradient-11)" stroke-width="2.5" transform="translate(34.710619, 44.332590) scale(-1, 1) translate(-34.710619, -44.332590) "></path>
+            </g>
+            <path d="M536.115932,109.245488 C533.90788,109.020979 531.286534,110.545279 530.390257,112.573501 L66.9461325,1161.32036 C66.0962654,1163.24356 66.927154,1165.6255 68.7875555,1166.60145 L592.534416,1441.35286 C594.327784,1442.29364 596.390877,1441.55413 597.18312,1439.68915 L1135.13216,173.325616 C1135.88276,171.558651 1135.04604,170.143258 1133.13656,169.949106 L536.115932,109.245488 Z" id="dispaly" stroke="#363636" stroke-width="2.5" fill="url(#linearGradient-12)"></path>
+        </g>
+    </g>
+</svg>

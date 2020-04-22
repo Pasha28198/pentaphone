@@ -1,0 +1,76 @@
+.HomePageWrapper {
+  position: relative;
+}
+.search {
+  position: absolute;
+  top: -43px;
+  right: 20px;
+}
+
+.RecentlyAdded-items {
+
+  &-image {
+    border-radius: 8px;
+    margin: 30px 0;
+    width: 100%;
+  }
+}
+
+.fastSellBtn {
+  position: fixed;
+  transition: all 0.463s;
+  bottom: 15px;
+  right: 20px;
+  z-index: 100000;
+}
+
+.Search {
+  width: 100%;
+  top: -160px;
+  position: absolute;
+  transition: all 0.44s;
+}
+
+.activeSearch {
+  top: -60px;
+}
+
+@media screen and (min-width: 720px) {
+  .Search {
+    position: absolute;
+    top: -55px;
+    right: 5px;
+    margin: 4px 0 0 auto;
+    width: 578px;
+  }
+
+  .search {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px){
+  .Search{
+    margin-right: 17px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Search {
+    position: absolute;
+    width: 670px;
+    top: -49px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .HomePageWrapper {
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 1360px) {
+  .fastSellBtn {
+    right: 350px;
+  }
+}

@@ -1,0 +1,128 @@
+@import "../../../assets/globalCss/styles";
+.deviceWrapper {
+  width: 98%;
+  min-height: 151px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 #a8b6c8;
+  display: flex;
+  flex-direction: row;
+  margin: 12px auto 0 auto;
+  transition: all 0.3s;
+  position: relative;
+  padding-right: 10px;
+  &:last-child{
+    margin-bottom: 12px;
+  }
+  &-image {
+    display: block;
+    margin-top: 15px;
+    padding-left: 5px;
+    max-height: 150px;
+    width: 115px;
+    height: 115px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    object-fit: contain;
+  }
+
+  &-descriptions {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 20px;
+
+    h4 {
+      color: #323b45;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .favorite{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border:none;
+  }
+}
+
+.price {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  color: $red;
+
+  &-currency {
+    margin-left: 4px;
+    font-size: 12px;
+  }
+}
+
+.conversation {
+  font-family: Roboto;
+  font-size: 11px;
+  text-align: left;
+  color: #5c6979;
+}
+
+.rate {
+  font-size: 11px;
+  text-align: left;
+  color: #5c6979;
+}
+
+.timeToEnd {
+  font-size: 11px;
+  text-align: left;
+  color: #323b45;
+}
+
+.DeleteFavorite {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+@media screen and ( min-width: 1024px ){
+  .deviceWrapper {
+    height: 197px;
+    img{
+      width: 211px;
+    }
+    &-descriptions {
+      padding-top: 25px;
+      line-height: 22px;
+      span{
+        font-size: 15px;
+        width: 250px;
+
+      }
+      .price{
+        font-size: 18px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+  .rating{
+    >div{
+      width: 60px;
+    }
+  }
+}
+@media screen and ( min-width: 1350px ){
+
+}
+

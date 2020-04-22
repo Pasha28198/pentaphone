@@ -1,0 +1,198 @@
+.TopDevice {
+  margin-top: 54px;
+  position: relative;
+  z-index: 3;
+
+  &-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 19px;
+
+    &>h2 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 18px;
+      font-size: 16px;
+      color: #323B45;
+      margin: 0 0 30px 20px;
+    }
+  }
+}
+
+.ItemDeviceWrapper {
+  padding: 3px 0 3px 20px;
+  width: 292px!important;
+}
+
+.ItemDevice {
+  display: flex;
+  flex-direction: row;
+  min-height: 140px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px #A8B6C8;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &-image {
+    height: 148px;
+    width: 119px;
+    object-fit: cover;
+    position: relative;
+    >img{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    };
+  }
+
+  &-description {
+    padding: 8px 6px 10px 10px;
+
+    &>h3 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px;
+      font-size: 14px;
+      color: #000000;
+      margin-bottom: 3px;
+    }
+
+    &>span {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 12px;
+
+      color: #5C6979;
+    }
+
+    &>p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      font-size: 16px;
+      text-align: left;
+      color: #FA2A00;
+      margin-top: 10px;
+    }
+
+    &>button {
+      background: #FA2A00;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      width: 96px;
+      height: 26px;
+      text-align: center;
+      border: none;
+      outline: none;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 18px;
+      font-size: 10px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .wrapperTopDevice {
+    margin-left: 0px;
+    margin-bottom: 78px;
+  }
+  .TopDevice {
+    &-title {
+      &>h2 {
+        margin-left: 0;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px){
+  .TopDevice{
+    &-title{
+      margin-left: 20px;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .TopDevice {
+    &-title {
+      margin-left: 0;
+      padding-right: 0;
+      & > h2 {
+        font-size: 20px;
+      }
+    }
+  }
+  .ItemDeviceWrapper {
+    padding: 3px 20px 3px 1px;
+    width: 160px!important;
+    margin-right: -11px !important;
+  }
+  .ItemDevice {
+    flex-direction: column;
+    width: 156px;
+    height: 279px;
+    box-shadow: 0px 0px 5px #A8B6C8;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &-image {
+      height: 169px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      >img {
+        position: static;
+        left: auto;
+        top: auto;
+        transform: none;
+        margin: 0 auto;
+        width: 100%;
+        zoom: 2;
+        height: auto;
+        pointer-events: none;
+        //height: 100%;
+      }
+    }
+
+    &-description {
+      padding: 8px 6px 5px 5px;
+
+
+      & > h3 {
+        height: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        font-size: 13px;
+      }
+
+      & > p {
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+
+      & > button {
+        margin-bottom: 8px;
+        display: block;
+        width: 130px;
+        height: 26px;
+      }
+    }
+  }
+}

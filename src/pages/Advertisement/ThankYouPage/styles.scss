@@ -1,0 +1,169 @@
+.thankYouPage{
+  padding-top: 40px;
+  padding-bottom: 70px;
+  .wrapperContent{
+    max-width: 400px;
+    *{
+      transition: all 0.3s;
+    }
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+    text-align: center;
+    h1{
+      font-size: 20px;
+      font-weight: 300;
+      color: #323b45;
+    }
+    p{
+      text-align: center;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.4;
+      color: #5c6979
+
+    }
+    section{
+      display: block;
+      .thYou{
+        font-size: 14px;
+        font-weight: normal;
+        color: #323b45;
+        span{
+          line-height: 22px;
+          font-size: 30px;
+          font-weight: 300;
+          margin-bottom: 15px;
+          display: inline-block;
+        }
+      }
+      .description{
+        display: block;
+      }
+      >h2{
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.29;
+        color: #323b45;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        span{
+          font-size: 14px;
+          font-weight: 500;
+          color: #fa2a00;
+        }
+      }
+      .advert{
+        span{
+          font-weight: normal;
+          color: #fa2a00;
+        }
+      }
+    }
+    .letterIcon{
+      width: 270px;
+      height: 123px;
+      margin-bottom: 22px;
+    }
+  }
+  .linksWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    a{
+      .linkButton{
+        height: 50px !important;
+        border-radius: 8px !important;
+        margin-bottom: 20px !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        color: #fff !important;
+        background-color: #fa2a00 !important;
+      }
+    }
+  }
+}
+//@media screen and (min-width: 375px) {
+//  .thankYouPage{
+//    .wrapperContent{
+//      max-width: 375px;
+//      h1{
+//        font-size: 24px;
+//      }
+//      p{
+//        font-size: 16px;
+//      }
+//      section{
+//        margin-bottom: 50px;
+//        p{
+//          line-height: 30px;
+//        }
+//        span{
+//          font-size: 20px;
+//        }
+//      }
+//      .letterIcon{
+//        width: 180px;
+//        margin-bottom: 40px;
+//      }
+//    }
+//  }
+//}
+//@media screen and (min-width:720px) {
+//
+//  .thankYouPage{
+//    .wrapperContent{
+//      max-width: 500px;
+//      h1{
+//        font-size: 24px;
+//      }
+//      p{
+//        font-size: 18px;
+//      }
+//      section{
+//        margin-bottom: 80px;
+//        p{
+//          line-height: 30px;
+//        }
+//        span{
+//          font-size: 22px;
+//        }
+//      }
+//      .letterIcon{
+//        width: 200px;
+//      }
+//    }
+//  }
+//
+//}
+
+//@media screen and (min-width:1400px) {
+//    .thankYouPage{
+//      .wrapperContent{
+//        max-width: 610px;
+//        padding-right: 42px;
+//        padding-left: 42px;
+//        h1{
+//          font-size: 24px;
+//        }
+//        p{
+//          font-size: 20px;
+//        }
+//        section{
+//          margin-bottom: 103px;
+//          p{
+//            line-height: 38px;
+//          }
+//          span{
+//            font-size: 30px;
+//            margin-bottom: 10px;
+//          }
+//        }
+//        .letterIcon{
+//          width: 315px;
+//          margin-bottom: 44px;
+//        }
+//      }
+//    }
+//}

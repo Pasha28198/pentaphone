@@ -1,0 +1,5 @@
+.ui.checkbox.check input:checked~.box:after, .ui.checkbox.check input:checked~label:after{
+    color: white !important;
+    background: #FA2A00;
+    border-radius: .21428571rem;
+}

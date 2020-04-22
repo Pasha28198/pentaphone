@@ -1,0 +1,81 @@
+.verifyNumber {
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+
+  h5 {
+    font-weight: 400;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 0.88;
+    text-align: center;
+    color: #323b45;
+  }
+
+  &-input {
+    padding-left: 11px;
+    outline: none;
+    margin-bottom: 21px;
+    border: none;
+    display: block;
+    width: 320px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: rgba(231, 233, 236, 0.39);
+  }
+
+  &-btn {
+    display: block;
+    width: 320px;
+    height: 50px;
+    border-radius: 3px;
+    font-family: LucidaGrande;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.listSocial {
+  max-width: 216px;
+  margin: 39px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  img {
+    pointer-events: none;
+  }
+
+  &-item {
+    width: 59px;
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 0 #a8b6c8;
+
+    &--sms {
+      padding-top: 3px;
+      background-color: #00ad5e;
+      margin-right: 15px;
+    }
+
+    &--viber {
+      background-color: #8458a2;
+    }
+
+    &--telegram {
+      padding-top: 3px;
+      padding-right: 3px;
+      background-color: #36a3d4;
+      margin-left: 15px;
+    }
+  }
+}
+@media screen and (min-width:1350px){
+  .verifyNumber{
+    max-width: 420px;
+    &-input {
+      width: 100%;
+    }
+  }
+}

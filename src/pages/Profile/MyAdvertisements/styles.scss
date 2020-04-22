@@ -1,0 +1,120 @@
+.containerWrapper{
+  display: block;
+  position: relative;
+  min-height: 100vh;
+  background-color: #F2F4F7;
+  padding-top: 25px;
+  .absent{
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    h3{
+      font-size: 14px;
+      color: #323B45;
+      font-weight: 500;
+    }
+    p{
+      color: #5C6979;
+      font-size: 12px;
+      font-weight: 300;
+    }
+    button{
+      border: none;
+      outline: none;
+      width: 300px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      color: white;
+      background: #FA2A00;
+      font-weight: 300 !important;
+      cursor: pointer;
+      margin: 0 auto;
+      margin-top: 180px;
+    }
+  }
+}
+.bargain{
+  padding-top: 30px;
+}
+.componentWrapper {
+  position: relative;
+  box-shadow: 0 0 5px 0 #a8b6c8;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+  background: white;
+  *{
+    transition: all 0.3s;
+  }
+  >h3{
+    height: 30px;
+    margin: 0;
+    color: white;
+    background: #65BA67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+  }
+  >div{
+    padding-left: 20px;
+    padding-right: 20px;
+    p {
+      display: flex;
+      justify-content: center;
+      color: #5C6979;
+      margin-top: 20px;
+      font-size: 12px;
+      >span{
+        color: #323B45;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.white{
+  background: white;
+}
+@media screen and (min-width: 720px){
+  .containerWrapper{
+    width: 670px;
+    margin: 0 auto;
+    min-height: auto;
+    background: none;
+    .absent{
+      margin-top: 100px;
+      h3{
+        font-size: 18px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    .componentWrapper{
+      border-radius: 8px;
+      overflow: hidden;
+      padding-bottom: 15px;
+      >div{
+        padding-left: 0px;
+        padding-right: 0px;
+        p{
+          display: block;
+          padding-left: 121px;
+          margin-top: -15px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+}
+

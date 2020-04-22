@@ -1,0 +1,84 @@
+.ClosePace {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+.outsideWrapperDisable {
+  position:fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  pointer-events: none;
+  transition: left 340ms cubic-bezier(0.0, 0.0, 0.2, 1), background 340ms 340ms;
+  overflow: hidden;
+  z-index:12;
+}
+.background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: -100%;
+  background: rgba(0,0,0,0.1);
+  z-index: 10;
+}
+.backActive{
+  left: 0;
+}
+.outsideWrapperActive {
+  overflow: hidden;
+  pointer-events: all;
+  left: 0;
+}
+.navigationWrapperOpen {
+  pointer-events: all;
+  width: 320px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  transition: width 420ms;
+  transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+  overflow-x: scroll;
+}
+.navigationWrapperOpen::-webkit-scrollbar {
+  display: none;
+}
+
+.navigationWrapperClose {
+  width: 300px;
+}
+
+.personalInfo {
+  width: 322px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 500px){
+  .navigationWrapperOpen {
+    pointer-events: all;
+    width: 80%;
+  }
+  .navigationWrapperClose {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px){
+  .outsideWrapperDisable {
+    left:0;
+    width: 329px;
+    border-right: 1px solid #adb4bc;
+    pointer-events: all;
+  }
+  .outsideWrapperActive{
+    left: 0;
+  }
+  .navigationWrapperOpen{
+    width: 100%;
+    overflow-x:scroll;
+    transition: all 0s;
+  }
+}
+

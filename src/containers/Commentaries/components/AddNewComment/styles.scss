@@ -1,0 +1,75 @@
+@import "../../../../assets/globalCss/styles";
+.AddNewComment {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #e0e0e1;
+  img{
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-right:20px;
+    border-radius: 50px;
+  }
+  .emptyField{
+    color: #fa2a00;
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  &-functionalBtn {
+    width: 272px;
+    height: 14px;
+    font-size: 12px;
+    text-align: left;
+    color: #4a90e2;
+    cursor: pointer;
+  }
+
+  &-add {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &-text {
+    resize: none;
+    height: 90px;
+    margin-bottom: 0px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px 0 #a8b6c8;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  &-btn {
+    background: $red;
+    color: white;
+    width: 240px;
+    height: 40px;
+    display: block;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 720px){
+  .AddNewComment {
+    img{
+      margin-top: 5px;
+      display: block;
+    }
+
+    &-btn {
+      margin: 40px 0 0;
+      width: 240px;
+      height: 40px;
+    }
+  }
+
+}

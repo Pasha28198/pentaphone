@@ -1,0 +1,21 @@
+.profileUser{
+  >div{
+    >div{
+      margin-bottom: 40px !important;
+      span{
+        width: 50% !important;
+      }
+    }
+  }
+}
+@media screen and(min-width: 1024px){
+  .profileUser{
+    >div{
+      >div{
+        span{
+          width: 50%;
+        }
+      }
+    }
+  }
+}

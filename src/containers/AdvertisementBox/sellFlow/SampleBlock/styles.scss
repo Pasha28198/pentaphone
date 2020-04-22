@@ -1,0 +1,161 @@
+@import "../../../../assets/globalCss/styles";
+
+.sampleWrapper{
+  height: 60px;
+  position: relative;
+  .arrow{
+    position: absolute;
+    bottom:14px;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline:none;
+    -webkit-appearance: none;
+    background-image: url('../../../../assets/forDevelop/arrow.svg');
+    display: none;
+    cursor: pointer;
+    &:hover{
+      background-image: url('../../../../assets/forDevelop/redArrow.svg')
+    }
+  }
+  .left{
+    left: -57px;
+    z-index: 2;
+
+  }
+  .right{
+    right: -57px;
+    bottom: 17px;
+    transform: rotate(-180deg);
+    z-index: 2;
+  }
+}
+.sampleItem {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 15px;
+  min-width: 109px !important;
+  width: auto !important;
+  height: 50px!important;
+  border-radius: 6px;
+  background-color: #e7e9ec;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 200;
+  overflow: hidden;
+  color: #585f6f;;
+  margin-left: 10px;
+  text-align: center;
+  padding-top: 15px;
+  transition: all .1s;
+  box-sizing: border-box;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+
+  img {
+    display: block;
+    max-width: 80%;
+    max-height: 70%;
+    margin: 0 auto 5px auto;
+  }
+
+}
+.wrapperSliderActive {
+  height: 50px;
+  overflow: hidden;
+  transition: all 1s;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  //.arrow{
+  //  position: absolute;
+  //  bottom:14px;
+  //  width: 36px;
+  //  height: 36px;
+  //  border-radius: 36px;
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //  border: none;
+  //  outline:none;
+  //  -webkit-appearance: none;
+  //  background-image: url('../../../assets/forDevelop/arrow.svg');
+  //  display: none;
+  //  &:hover{
+  //    background-image: url('../../../assets/forDevelop/redArrow.svg')
+  //  }
+  //}
+  //.left{
+  //  left: -57px;
+  //  z-index: 2;
+  //
+  //}
+  //.right{
+  //  right: -57px;
+  //  bottom: 12px;
+  //  transform: rotate(-180deg);
+  //  z-index: 2;
+  //}
+}
+.sellFlowSlider {
+  padding: 0 60px;
+  //button{
+  //  width: 30px !important;
+  //  height: 30px !important;
+  //  border:none;
+  //  background: url('../../../assets/forDevelop/arrow.svg') no-repeat;
+  //  background-position:center;
+  //  cursor:pointer;
+  //}
+  //button:hover{
+  //  background: url('../../../assets/forDevelop/redArrow.svg') no-repeat;
+  //  background-position: center;
+  //}
+  //button[class*="slick-prev"] {
+  //  left: 16px !important;
+  //  top:25px !important;
+  //}
+  //button[class*="slick-prev"]:before{
+  //  display: none;
+  //}
+  //button[class*="slick-next"] {
+  //  right: 10px !important;
+  //  transform: rotate(180deg);
+  //  top:11px;
+  //}
+  //button[class*="slick-next"]:before{
+  //  display: none;
+  //}
+}
+.spinnerWrapper {
+  padding-top: 15px;
+  width: 14px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .sampleWrapper{
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    .arrow{
+      display: block;
+    }
+  }
+  .sampleItem {
+    font-size: 16px;
+    &:hover {
+      color: #ffffff;
+      background-color: $red !important;
+    }
+  }
+  .wrapperSliderActive {
+    .arrow {
+      display: block;
+    }
+  }
+}

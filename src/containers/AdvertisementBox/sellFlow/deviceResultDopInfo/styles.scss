@@ -1,0 +1,208 @@
+.deviceResult {
+  min-height: 168px;
+  overflow: hidden;
+  margin: 0 auto 15px auto;
+  position: relative;
+
+  span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.185786px;
+
+    color: #323B45;
+  }
+
+  article {
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    background: #FAFBFC;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+    p{
+      margin: 0;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 20px;
+      font-size: 12px;
+      letter-spacing: 0.185786px;
+      color: #323B45;
+    }
+
+    h1{
+      margin: 0;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      letter-spacing: 0.185786px;
+
+      color: #000000;
+    }
+  }
+}
+
+.changeBtn {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 12px;
+  text-align: right;
+
+
+  color: #4A90E2;
+}
+
+.photoDesc {
+  padding-top: 3px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  font-size: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 18px;
+  margin-top: -18px;
+}
+
+.itemInfo {
+  overflow: hidden;
+  background: #FAFBFC;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  width: 73px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #e7e9ec;
+  margin: 0 0 11px 10px;
+
+  &:first-letter{
+    text-transform: uppercase;
+  }
+
+
+  img {
+    display: block;
+    max-width: 59%;
+    max-height: 50%;
+    margin: 12px auto 5px auto;
+  }
+}
+
+.Image {
+  max-width: 150px;
+  max-height: 327px;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.ImageWithResultBlock {
+  text-align: center;
+  max-width: 150px;
+  max-height: 249px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mainInfo {
+  font-weight: 700!important;
+}
+
+.middlePrice {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #323b45;
+  margin-bottom: 27px;
+
+  span {
+    font-size: 18px;
+    font-weight: normal;
+    color: #dc0000;
+  }
+}
+
+.selected-visible {
+  opacity: 1!important;
+  transition: all 0.525s cubic-bezier(0.4, 0.0, 0.6, 1);
+}
+
+.selected {
+  opacity: 0;
+}
+
+@media screen and (min-width: 720px){
+  .deviceResult {
+    display: flex;
+    flex-direction: row;
+    width: none;
+    margin: 0 60px;
+
+    >.selected{
+      width: 440none;
+      margin: 0 auto !important;
+    }
+    article{
+      margin-bottom: 75px;
+      margin-top: 3px;
+      font-size: 14px;
+      color: #323b45;
+      min-width: 270px;
+      height: 150px;
+      border-radius: 4px;
+
+      span{
+        color: #5c6979;
+      }
+      h1{
+        margin-bottom: 8px;
+        font-size: 18px;
+      }
+      h1{
+        &:nth-child(2){
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .Image,.ImageWithResultBlock {
+    max-width: none;
+    float: left;
+    width: 151px;
+    height: 150px;
+    object-fit: contain;
+    box-shadow: 0px 0px 5px #A8B6C8;
+    border-radius: 4px;
+    margin: 3px 10px 0 3px;
+  }
+  .photoDesc {
+    padding-top: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    left: 4px;
+    bottom: 74px;
+    font-size: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    width: 127px;
+    height: 18px;
+    margin-top: -18px;
+  }
+}

@@ -1,0 +1,26 @@
+.SampleBlock {
+  display: flex;
+  flex-direction: row;
+  margin-top: 17px;
+
+  &-item {
+    cursor: pointer;
+    text-align: center;
+    width: 85px;
+    height: 39px;
+    margin-right: 10px;
+    background: #E7E9EC;
+    border-radius: 6px;
+    line-height: 39px;
+    font-weight: 300;
+    font-size: 12px;
+
+    color: #323B45;
+  }
+
+  &-itemActive {
+    border: 1px solid #FA2A00;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+}

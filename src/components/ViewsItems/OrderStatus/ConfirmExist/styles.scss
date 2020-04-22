@@ -1,0 +1,19 @@
+.ConfirmationBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+}
+
+.CancelBtn {
+  font-size: 14px;
+  color: #FA2A00;
+  margin-right: 24px;
+}
+
+.ConfirmBtn {
+  font-size: 14px;
+  color: #4A90E2;
+}

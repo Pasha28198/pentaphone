@@ -1,0 +1,47 @@
+.Auc {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px 10px 5px;
+  font-size: 14px;
+  margin: 0 auto;
+
+  color: #323B45;
+}
+
+.AucWrapper {
+  padding-bottom: 5px;
+  border-bottom: 1px rgba(168, 182, 200, 0.5) solid;
+
+  &-desc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .Auc {
+    display: flex;
+    justify-content: start;
+
+    &>span {
+      margin-right: 101px;
+    }
+  }
+  .AucWrapper {
+    border-bottom: none;
+    display: block;
+
+    &-mob {
+      display: none;
+    }
+
+    &-desc {
+      display: flex;
+
+      &>span {
+        margin-left: 10px;
+        font-size: 14px;
+        color: #5C6979;
+      }
+    }
+  }
+}

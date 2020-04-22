@@ -1,0 +1,99 @@
+.Comment {
+  border-bottom: 0.5px solid #A8B6C8;
+  padding-bottom: 27px;
+  margin-bottom: 27px;
+  overflow: hidden;
+  position: relative;
+
+  &:last-child {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  &-label {
+    display: flex;
+    justify-content: space-between;
+
+    &>div {
+      display: flex;
+      flex-direction: column;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 12px;
+      text-align: right;
+      position: relative;
+
+      color: #566978;
+
+      &>span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 12px;
+
+        color: #5C6979;
+      }
+      &>.ratingNumbers{
+        display: inline-block;
+        position: absolute;
+        top: 19px;
+        right: -25px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .date{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 12px;
+    color: #566978;
+  }
+  &-content {
+    margin-top: 17px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    font-size: 12px;
+
+    color: #323B45;
+  }
+}
+.feedback{
+  &:last-child{
+    border-bottom: 0.5px solid #A8B6C8;
+  }
+  .Comment-label{
+    >div{
+      >span{
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .feedback{
+    display: flex;
+    &:first-child{
+      border-top: 0.5px solid #A8B6C8;
+      padding-top: 27px;
+    }
+    .date{
+      position: static;
+    }
+    .contentWrapper{
+      width: 440px;
+      margin-left: 100px;
+    }
+    .Comment-content {
+      margin-top: 5px;
+      font-size: 17px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.ui.styled.accordion, .ui.styled.accordion .accordion {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.ui.styled.accordion .active.title {
+    background: 0!important;
+    font-family: Roboto!important;
+    font-style: normal!important;
+    font-weight: 300!important;
+    line-height: normal!important;
+    font-size: 14px!important;
+    color: #323B45!important;
+    color: rgba(0,0,0,.95)!important;
+}
+
+.ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+    margin: 0 20px!important;
+    padding: 15px 0!important;
+    color: rgba(0,0,0,.4)!important;
+    font-weight: 300!important;
+    position: relative;
+    color: #323B45!important;
+    border-top: 0.5px solid #A8B6C8!important;
+    -webkit-transition: background .1s ease,color .1s ease!important;
+    transition: background .1s ease,color .1s ease!important;
+}
+
+.ui.styled.accordion .accordion .title, .ui.styled.accordion .title:first-child {
+    border-top: none!important;
+}
+
+.ui.styled.accordion .accordion .content, .ui.styled.accordion .content {
+    margin: 0!important;
+    padding: 22px 20px 1.5em!important;
+}
+
+@media screen and (min-width: 720px) {
+    .ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+        margin: 0!important;
+    }
+    .last{
+        cursor: auto!important;
+    }
+
+    .ui.styled.accordion .accordion .content, .ui.styled.accordion .content {
+        margin: 0!important;
+        padding: 22px 0 1.5em!important;
+    }
+}

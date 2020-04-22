@@ -1,0 +1,43 @@
+@import "../../../../../../assets/globalCss/styles";
+.number {
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+
+  h5 {
+    font-weight: 400;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 0.88;
+    text-align: center;
+    color: #323b45;
+    margin-bottom: 51px;
+  }
+
+  &-btn {
+    margin-top: 22px;
+    width: 320px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: $red;
+    font-family: LucidaGrande;
+    font-size: 16px;
+    color: #ffffff;
+  }
+}
+
+.error {
+  color: $red;
+  font-size: 8px;
+  text-align: left;
+}
+@media screen and (min-width: 1350px){
+
+  .number {
+    max-width: 420px;
+    input{
+      max-width: 400px;
+    }
+  }
+
+}

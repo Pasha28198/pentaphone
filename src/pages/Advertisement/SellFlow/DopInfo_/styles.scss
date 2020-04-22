@@ -1,0 +1,83 @@
+.createAds {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300!important;
+  line-height: normal;
+  font-size: 16px;
+  text-align: center;
+  background: #FA2A00;
+  border-radius: 4px;
+  color: #FFFFFF;
+  height: 40px;
+  width: 256px;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 61px auto;
+}
+
+.labelPrice {
+  margin: 0 20px 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #323B45;
+}
+
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 16px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #323B45;
+}
+
+.imageWrapperSellFlow {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 720px) {
+  .imageWrapperSellFlow {
+    margin: 0 20px;
+    border-bottom: 1px rgba(168, 182, 200, 0.5) solid;
+  }
+
+  .labelPrice {
+    margin: 0 60px 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+
+    color: #323B45;
+  }
+
+  .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    color: #323B45;
+  }
+
+}
+
+.addPhotes {
+  display: block;
+  margin: 50px auto;
+  width: 263px;
+  color: #FA2A00;
+}

@@ -1,0 +1,16 @@
+.tabWrapper{
+  display: block;
+  >div {
+    >div {
+      background: white;
+      box-shadow: none;
+      &:first-child{
+        margin-bottom: 40px;
+      }
+      >span{
+        color: #323B45;
+        width: 50%;
+      }
+    }
+  }
+}

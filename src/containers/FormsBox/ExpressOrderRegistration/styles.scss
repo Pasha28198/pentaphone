@@ -1,0 +1,39 @@
+.inputWrapper{
+  &>div{
+    margin-top: 24px;
+    background: #F2F4F7 !important;
+    &>div{
+      &>input{
+        border: none !important;
+        background: transparent !important;
+        &::placeholder {
+          color:#626262 !important;
+          font-weight: 300 !important;
+        }
+        &:-webkit-autofill {
+          -webkit-text-fill-color: #000 !important; /* цвет текста */
+          color: #000 !important; /* цвет текста */
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .inputWrapper{
+    display: flex;
+    justify-content: space-between;
+    &>div{
+      width: 350px;
+      height: 50px;
+      margin-top: 0;
+      &>div{
+        height: 100% !important;
+        &>input{
+          height: 100% !important;
+        }
+      }
+
+    }
+  }
+}

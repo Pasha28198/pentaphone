@@ -1,0 +1,23 @@
+.list{
+  float: right;
+  width: 172px;
+  >div{
+    //display: flex;
+    >div{
+      width: 75px !important;
+      display: inline-block !important;
+      margin-right: 10px;
+      padding: 0 !important;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .list{
+    width: 390px;
+    >div {
+      >div {
+       width: 120px !important;
+      }
+    }
+  }
+}
