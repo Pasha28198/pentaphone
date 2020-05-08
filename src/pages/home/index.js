@@ -3,6 +3,7 @@ import styles from './styles.scss'
 import ParallaxMousemove from 'react-parallax-mousemove'
 import Button from 'src/generalElements/button/button'
 import TrendingDeales from './trendingDeales/trendingDeals'
+import LastChanseToBuy from './lastChanceToBuy'
 
 class Home extends React.Component {
 	render () {
@@ -72,6 +73,7 @@ class Home extends React.Component {
 				</div>
 				<div className={styles.contentContainer}>
 					<TrendingDeales />
+					<LastChanseToBuy />
 				</div>
 			</div>
 		)

@@ -7,20 +7,29 @@ import { faRandom, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { itemList } from './infoItem'
 
 const itemTypes = {
-	lastChanse: {},
-	trending: {},
-	bestsellers: {},
-	LatestProd: {},
-	hotDeals: {},
-	viewed: {},
-	slider: {}
+	'lastChanse': styles.prodItemLast,
+	'trending': styles.prodItem,
+	'bestsellers': [],
+	'LatestProd': [],
+	'hotDeals': [],
+	'viewed': [],
+	'slider': []
 }
 
 const ProductItem = (props) => {
 	function returnProductItem (type, numberOf) {
+		let currentStylesList
+		Object.keys(itemTypes).map((elem) => {
+			if (type === elem) {
+				currentStylesList = itemTypes[elem]
+			}
+		})
+
 		return (
 			itemList.map((item, i) => {
-				return <div key={i} className={styles.prodItem}>
+				if (i > numberOf) { return }
+
+				return <div key={i} className={currentStylesList}>
 					<div className={styles.outOf}>{item.outOf}</div>
 					<div className={styles.sale}>{item.sale ? `-${item.sale}%` : null}</div>
 					<div className={styles.icons}>
@@ -32,7 +41,7 @@ const ProductItem = (props) => {
 					<div className={styles.imgCont}>
 						<img className={styles.img} src={item.img[0]} alt={item.name}/>
 						<img className={styles.imgTwo} src={item.img[1]} alt={item.name} />
-						{item.timer}
+						<div className={styles.timer}>{item.timer}</div>
 					</div>
 					<div className={styles.info}>
 						<p className={styles.brend}>{item.brend}</p>
