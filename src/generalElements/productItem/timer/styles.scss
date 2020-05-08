@@ -1,0 +1,49 @@
+.timerCont{
+    position: relative;
+}
+.timerContSlider{
+    position: relative;
+    height: 55px;
+}
+.timer{
+    border-top: 2px solid #2659cf;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.14);
+    opacity: .9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9fc;
+    .separator{
+        color: #e2e2e3;
+        font-size: 15px;
+    }
+    span{
+        font-size: 20px;
+        line-height: 20px;
+        color: #494949;
+        font-weight: 400;
+    }
+    .format{
+        font-size: 7px;
+        line-height: 7px;
+        color: #6f6f6f;
+        text-transform: uppercase;
+    }
+    .spanSlider{
+        font-size: 26px;
+    }
+    .formatSlider{
+        font-size: 9px;
+        line-height: 7px;
+        color: #6f6f6f;
+        text-transform: uppercase;
+    }
+}
+

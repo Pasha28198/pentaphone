@@ -172,3 +172,43 @@
     padding-right: 340px;
   }
 }
+
+.container{
+  margin: 0 10px;
+}
+.site-header{
+  color: #6c757d;
+  font-size: 13px;
+  
+}
+.top-bar{
+  padding: 8px 80px;
+  border-bottom: 1px solid #6c757d;
+}
+.list{
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+.list> li{
+  list-style: none;
+  margin-left: 20px;
+  a{
+    color: #6c757d;
+  }
+}
+.header_socials{
+  font-size: 13px;
+  a{
+    color: #6c757d;
+    margin-right: 15px;
+  }
+}
+.hot-title{
+  >h5{font-weight: 400;}
+}
+.main{
+  padding: 40px 0;
+}

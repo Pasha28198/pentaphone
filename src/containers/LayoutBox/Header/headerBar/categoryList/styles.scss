@@ -1,0 +1,112 @@
+.hiddenBlockContainer{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 550px;
+    z-index: 9999;
+    color: #000;
+    height: 458.95px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,.15);
+    & .subLinks{
+     display: flex;
+     padding: 20px 30px 0px;
+     flex-direction: column;
+     text-align: start;
+     >ul{
+         list-style: none;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         align-self: flex-start;
+         padding: 0;
+         margin-bottom: 15px;
+         >li{
+            width: 50%;
+            padding: 0;
+            height: 30px;
+            font-size: 12px;
+            font-weight: 400;
+            >a{
+                color: rgba(41,46,56,1);
+                text-transform: none;
+                transition: color .2s linear!important;
+            }
+            >a:hover{
+                color: #6f42c1;
+            }
+            }
+         }
+        
+        }
+    h4{
+        margin: 0px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    & .imgCont{
+        margin-top: 20px;
+        background: url('https://via.placeholder.com/550x280');
+        height: 100%;
+    }
+}
+.listOfCategory{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    min-width: 150px;
+    max-width: 300px;
+    background: #fff;
+    box-shadow: 0 2px 3px 0 rgba(18,16,11,.15);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    >div{  
+        
+        display: flex;
+        justify-content: flex-start;
+        font-size: 12px;
+        height: 51px;
+        font-weight: 600;
+        padding: 13px 15px 9px 32px;
+        
+        align-items: center;
+        svg, img, a{
+            transition: transform .5s linear;
+        }
+        svg{
+            color: #6f42c1;
+            margin-right: 20px; 
+        }
+        img{
+            height: 18px;
+            margin-right: 20px;
+        }
+        a{
+            color: #4d4d4d;
+            
+        }
+        &:hover svg{
+            transform: translateX(8px);
+        }
+        &:hover img{
+            transform: translateX(8px);
+        }
+        &:hover a{
+            transform: translateX(8px);
+        }
+        &:hover .hiddenBlockContainer{
+            display: flex;
+            
+        }
+    }
+
+    
+    :before{
+        content: '';
+        display: none;
+    }
+}

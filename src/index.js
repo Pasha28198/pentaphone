@@ -9,6 +9,8 @@ import createHistory from 'history/createBrowserHistory'
 import { BrowserRouter } from 'react-router-dom'
 import reduxThunk from 'redux-thunk'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import reducers from './store/reducers/index'
 import App from 'components/RootComponent/App'
 import 'normalize.css'

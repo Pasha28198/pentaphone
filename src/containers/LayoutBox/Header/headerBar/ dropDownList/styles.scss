@@ -1,0 +1,175 @@
+//MenuList styles
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.menuList{
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 3px 0 rgba(18,16,11,.15);
+    background: #fff;
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    text-align: left;
+    >li{
+        padding: 11px 55px 9px 25px;
+        border-bottom: 1px solid #f2f2f2;
+        a { 
+            display: inline-block;
+            padding: 0;
+            font-weight: 400;
+            font-size: 13px;
+            color: #4d4d4d;
+            transition: transform .5s linear;
+        }
+    }
+    
+    > li:hover a{
+        background: #fff;
+        color: #4d4d4d;
+        transform: translateX(8px);
+    }
+
+}
+//ShopList styles
+
+.shopList{
+    display: none;
+    box-shadow: 0  0 10px rgba(0,0,0,.28);
+    transform: translateY(6px);
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 900px;
+    padding: 28px 44px;
+    &:nth-child(1) div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+            >div{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                min-width: 300px;
+                padding-right: 30px;
+                padding-left: 5px;
+                
+                h4{
+                    font-size: 16px;
+                    line-height: 24px;
+                    width: 100%;
+                    text-align: left;
+                    color: #333;
+                    font-weight: 700;
+                    padding-bottom: 14px;
+                    border-bottom: 1px solid #eee;
+                }
+                >ul{
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    li{ 
+                        padding: 5px 15px 5px 0;
+                        width: 100%;
+                        a{  
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #333;
+                            transform: color .5s linear;
+                        }
+                        :hover{
+                            color: #595bd4;
+                        }
+                    }
+                }
+            }
+    }
+    & .imgLink{
+        
+    }
+    & .block:nth-child(2), & .block:nth-child(4){
+        border-right: 1px solid #eee;
+        border-left: 1px solid #eee;
+        padding-left: 10px;
+    }
+    & .block:nth-child(3), & .block:nth-child(4){
+        >ul{
+            margin-bottom: 0px;
+        }
+    }
+    & .helper{
+        position: absolute;
+        width: 200px;
+        height: 15px;
+        top: -5px;
+        left: -10px;
+        background: transparent;
+    }
+}
+
+//styles ElementsList
+
+.elementsList{
+    display: none;
+    box-shadow: 0  0 10px rgba(0,0,0,.28);
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translateY(6px) translateX(-0%) ;
+    padding: 28px 44px;
+    >div{
+        display: flex;
+        flex-direction: column;
+        min-width: 250px;
+        margin-left: 20px;
+        &:nth-child(4){
+            min-width: 0;
+        }
+        h4{
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 20px;
+            text-align: left;
+            color: #333;
+            font-weight: 700;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #eee;
+        }
+        >ul{
+            display: inline-block;
+            border-right: 1px solid #eee;
+            :nth-child(4){
+            border-right: none;
+                }
+            li{ 
+                padding: 5px 15px 5px 0;
+                width: 100%;
+                a{  
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #333;
+                    transform: color .5s linear;
+                }
+                :hover{
+                    color: #595bd4;
+                }
+            }
+        }
+    }
+    & .helper{
+        position: absolute;
+        width: 150px;
+        height: 15px;
+        top: -5px;
+        right: -10px;
+        background: transparent;
+    }
+}
+

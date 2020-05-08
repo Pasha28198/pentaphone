@@ -61,4 +61,19 @@ export default () =>
 				</div>
 			</section>
 		</article>
+		<div className={styles.copyright_box}>
+
+			<div className={styles.container}>
+
+				<div className={styles.copyright }>
+
+					<div className={styles.copyright_text}>
+						Copyright © 2020. eLab WordPress Theme by StylemixThemes
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
 	</footer>

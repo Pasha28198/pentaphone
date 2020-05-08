@@ -7,6 +7,11 @@ import React from 'react'
 
 import HomePage_ from 'src/pages/HomePage_/index'
 
+// new pages
+
+import Home from 'src/pages/home/index'
+import Shop from 'src/pages/shop/index'
+
 // root pages
 
 import FaceBook from 'src/pages/RootPages/LoginFacebook'
@@ -64,9 +69,19 @@ export default [
 		path: '/',
 		exact: true,
 		component: (props) => (
-			<HomePage_
+			<Home
 				parentProps={props}
 				titleHelmet="ReSell - покупка-продажа б/у телефонов с гарантией. Samsung, Apple, Xiaomi"/>
+		),
+		auth: false
+	},
+	{
+		path: '/shop',
+		exact: true,
+		component: (props) => (
+			<Shop
+				parentProps={props}
+			/>
 		),
 		auth: false
 	},

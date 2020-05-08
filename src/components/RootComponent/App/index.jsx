@@ -26,7 +26,7 @@ class App extends Component {
 		return (
 			<div className={styles.wrapperApp}>
 				<Header />
-				<SideBar/>
+				{/* <SideBar/> */}
 				<div className={styles.mainWrapper}>
 					<main>
 						<Switch>
@@ -57,7 +57,7 @@ class App extends Component {
 						</Switch>
 					</main>
 				</div>
-				<NavigationPanel />
+				{/* <NavigationPanel /> */}
 				<FullPageSpinner/>
 				<Footer/>
 			</div>

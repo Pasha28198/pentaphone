@@ -1,0 +1,117 @@
+.container{
+    margin: 0 10px;
+  }
+.main{
+    padding: 40px 80px;
+}
+.logo{
+    padding: 0 15px;
+}
+.iconsCont{
+    padding: 0 10px;
+    display: flex;
+    >a{
+        font-size: 20px;
+        padding: 0 20px;
+        :hover{
+            cursor: pointer;
+        }
+    }
+}
+.input{
+    width: 100%;
+    padding: 11px 20px 10px;
+    transition: all .3s ease-in;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    font-size: 13px;
+    line-height: 17px;
+    color: #555;
+    border-radius: 18px;
+    outline: #ffdead;
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.form{
+    min-width: 550px;
+    position: relative;
+    >div{
+        border-left: 1px solid #e6e6e6;
+        width: 160px;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px 0;
+        max-width: 167px;
+        right: 60px;
+        top: 0px;
+        height: 39.5px;
+        z-index: 999;
+        color: #3a3a3b;
+        text-transform: uppercase;
+        font-size: 12px;
+        background: transparent;
+        // transition: background 1s cubic-bezier(0,1.28,.74,.44) ;
+        cursor: pointer;
+        }
+        >div:hover{
+            @keyframes changeBg {
+                form {background: linear-gradient(to right, rgba(89,91,212,1) 0%, #fff 100%)}
+                20% {background: linear-gradient(to right, rgba(89,91,212,1) 50%, #fff 50%) }
+                25% {background: linear-gradient(to right, rgba(89,91,212,1) 55%, #fff 45%) }
+                30% {background: linear-gradient(to right, rgba(89,91,212,1) 60%, #fff 40%) }
+                35% {background: linear-gradient(to right, rgba(89,91,212,1) 65%, #fff 35%) }
+                40% {background: linear-gradient(to right, rgba(89,91,212,1) 70%, #fff 30%) }
+                45% {background: linear-gradient(to right, rgba(89,91,212,1) 75%, #fff 25%) }
+                50% {background: linear-gradient(to right, rgba(89,91,212,1) 80%, #fff 20%) }
+                55% {background: linear-gradient(to right, rgba(89,91,212,1) 85%, #fff 15%) }
+                60% {background: linear-gradient(to right, rgba(89,91,212,1) 90%, #fff 10%) }
+                65% {background: linear-gradient(to right, rgba(89,91,212,1) 92%, #fff 8%) }
+                70% {background: linear-gradient(to right, rgba(89,91,212,1) 93%, #fff 7%) }
+                75% {background: linear-gradient(to right, rgba(89,91,212,1) 94%, #fff 6%) }
+                80% {background: linear-gradient(to right, rgba(89,91,212,1) 95%, #fff 5%) }
+                85% {background: linear-gradient(to right, rgba(89,91,212,1) 96%, #fff 4%) }
+                90% {background: linear-gradient(to right, rgba(89,91,212,1) 97%, #fff 3%) }
+                95% {background: linear-gradient(to right, rgba(89,91,212,1) 98%, #fff 2%) }
+                to {background: linear-gradient(to right, rgba(89,91,212,1) 100%, #fff 0%)}
+              }
+            animation-name: changeBg;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            color: #fff
+        }
+    >button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        background-color: rgba(89,91,212,1);
+        border: 0;
+        border-radius: 0 16px 16px 0;
+        color: #fff;
+        cursor: pointer;
+        }
+}
+.categoriesListCont{
+    background: #fff;
+    min-width: 160px;
+    margin-left: -20px;
+    margin-top: 10px;
+}
+.catElement{
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #a3a3a3;
+    border-bottom: 1px solid #eee;
+    flex: 0 0 100%;
+    :hover{
+        color: rgba(89,91,212,1);
+    }
+}

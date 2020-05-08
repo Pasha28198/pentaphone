@@ -1,0 +1,43 @@
+.prevPrise {
+    font-size: 12px;
+    color: #bdbdbd;
+    margin-right: 14px;
+    text-decoration: line-through
+}
+.prise {
+    color: rgba(89,91,212,1);
+    font-size: 22px;
+    font-weight: 700
+}
+.name {
+    font-size: 20px;
+    color: #404040;
+    margin-bottom: 13px;
+    font-weight: 600
+}
+.brend{
+    margin: 15px 0 8px;
+    font-size: 13px;
+    color: #6a6a6a;
+    font-style: italic
+}
+.myDots{
+    ul{
+       margin-bottom: -40px;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #881798;
+      }
+    li{
+        // width: 20px;
+        // height: 20px;
+        // border: 1px solid #000;
+        // border-radius: 50%;
+        // margin-left: 25px;
+    }
+    .slick-active{
+        // background-color: red;
+        
+    }
+    
+}
