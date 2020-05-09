@@ -6,7 +6,7 @@ import { createStore, applyMiddleware } from 'redux'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import { routerMiddleware, ConnectedRouter } from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Router } from 'react-router-dom'
 import reduxThunk from 'redux-thunk'
 
 import 'bootstrap/dist/css/bootstrap.min.css'

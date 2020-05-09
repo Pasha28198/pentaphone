@@ -4,6 +4,8 @@ import ParallaxMousemove from 'react-parallax-mousemove'
 import Button from 'src/generalElements/button/button'
 import TrendingDeales from './trendingDeales/trendingDeals'
 import LastChanseToBuy from './lastChanceToBuy'
+import Bestsellers from './bestsellers'
+import PropTypes from 'prop-types'
 
 class Home extends React.Component {
 	render () {
@@ -24,6 +26,7 @@ class Home extends React.Component {
 			}
 
 		}
+		// console.log(this.props.match.params)
 		return (
 			<div>
 				<div className={styles.greyCont}>
@@ -75,9 +78,17 @@ class Home extends React.Component {
 					<TrendingDeales />
 					<LastChanseToBuy />
 				</div>
+				<div className={styles.greyCont}>
+					<div className={styles.contentContainer}>
+						<Bestsellers />
+					</div>
+				</div>
 			</div>
 		)
 	}
+}
+Home.propTypes = {
+	match: PropTypes.string
 }
 
 export default Home

@@ -63,6 +63,7 @@ import FeedBack from 'src/pages/FeedBack/index.jsx'
 import ThankYouPage from 'pages/Advertisement/ThankYouPage'
 import Condef from 'src/pages/RootPages/Condef'
 import Articles from '../pages/Articles'
+import All from 'src/pages/home/bestsellers/homeAllProd'
 
 export default [
 	{
@@ -73,6 +74,13 @@ export default [
 				parentProps={props}
 				titleHelmet="ReSell - покупка-продажа б/у телефонов с гарантией. Samsung, Apple, Xiaomi"/>
 		),
+		auth: false
+
+	},
+	{
+		path: '//home_all',
+		exact: false,
+		component: (props) => (<All parentProps={props} />),
 		auth: false
 	},
 	{
@@ -85,6 +93,7 @@ export default [
 		),
 		auth: false
 	},
+
 	{
 		path: '/auth/:formType/:redirectToken/:facebookToken',
 		component: (props) => (

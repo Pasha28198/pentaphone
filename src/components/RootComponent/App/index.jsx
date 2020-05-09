@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import routes from 'src/routes/index'
+import {render} from 'react-dom'
 import PropTypes from 'prop-types'
 import { Switch, Route } from 'react-router-dom'
 
@@ -33,6 +34,7 @@ class App extends Component {
 							<For each='route' index="index" of={routes}>
 								<Choose>
 									<When condition={route.auth}>
+
 										<PrivateRouter
 											{...{
 												path: route.path,
@@ -43,12 +45,13 @@ class App extends Component {
 										/>
 									</When>
 									<Otherwise>
+
 										<Route
 											{...{
 												path: route.path,
 												component: route.component,
 												exact: route.exact
-											}}
+											} }
 											key={index}
 										/>
 									</Otherwise>

@@ -1,0 +1,89 @@
+.titleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    h4{
+        margin: 0;
+        font-size: 35px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+    a{ 
+        .choosen {
+            >svg{
+                color: rgba(89,91,212,1);
+            }
+        }
+        transition: .3s ease;
+        position: relative;
+        margin-left: 60px;
+            >svg{
+                font-size: 23px;
+                vertical-align: top;
+                color: rgb(68, 68, 68);
+                cursor: pointer;
+            }
+        &:before{
+            content: '';
+            position: absolute;
+            white-space: nowrap;
+            bottom: 100%;
+            left: 50%;
+            display: block;
+            padding: 3px 10px;
+            margin-left: -1px;
+            transform: translateX(-50%) translateZ(0) translateY(-8px);
+            background-color: rgba(41,46,56,1);
+            color: #fff;
+            font-size: 11px;
+            line-height: 16px;
+            border-radius: 5px;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s ease;
+        }
+        &:nth-child(1):before{
+            content: 'All';
+        }
+        &:nth-child(2):before{
+            content: 'Bestsellers';
+        }
+        &:nth-child(3):before{
+            content: 'Camera & Photos';
+        }
+        &:nth-child(4):before{
+            content: 'Watches';
+        }
+        &:nth-child(5):before{
+            content: 'Headphone';
+        }
+        &:after{
+        content: ' ';
+        position: absolute;
+        bottom: 100%;
+        display: block;
+        margin-bottom: -5px;
+        margin-left: -1px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        border-color: rgba(41,46,56,1) transparent transparent transparent;
+        opacity: 0;
+        -webkit-transform: translateX(-50%) translateZ(0) translateY(-9px);
+        transform: translateX(-50%) translateZ(0) translateY(-9px);
+        visibility: hidden;
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+        }
+        &:hover svg{
+            color: rgba(89,91,212,1);
+        }
+        &:hover:before, &:hover:after{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
