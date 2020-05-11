@@ -6,7 +6,9 @@ export const itemList = [
 		prise: 849,
 		img: [
 			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/mcbook-799x799-242x269.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-241x268.png'],
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-241x268.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/mcbook-799x799-483x451.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-483x451.png'],
 		timer: <Timer/>,
 		sale: 5,
 		outOf: '' },
@@ -34,7 +36,9 @@ export const itemList = [
 		prise: 174,
 		img: [
 			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/amazfit_equator_rose_gold_closed_loop-999x999-242x269.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/amazfit_moonbeam_white_open_clasp-999x999-241x268.png'],
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/amazfit_moonbeam_white_open_clasp-999x999-241x268.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/white-watch-799x799-483x451.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/amazfit_bip_smartwatch_white_cloud_front-999x999-483x451.png'],
 		timer: <Timer/>,
 		sale: 17,
 		outOf: '' },

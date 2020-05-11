@@ -1,38 +1,119 @@
-.productContainer{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    flex-direction: row;
+@mixin hiddenIcons {
+    .icons{
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: -1px;
+        top: 35px;
+        padding: 10px 8px 6px;
+        text-align: center;
+        background-color: rgba(89,91,212,1);
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        visibility: hidden;
+        transition: .3s ease;
+        z-index: 99999;
+        svg{
+            margin-bottom: 10px;
+            &:nth-child(1){
+                margin-left: -4px;
+            }
+            &:nth-child(4){
+                margin-bottom: 0;
+            }
+        }
+    }
+    &:hover .icons{
+        visibility: visible;
+    }
+}
+@mixin saleGeneral($padding: 7px) {
+    .sale{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 $padding;
+        background-color: #2659cf;
+        color: #fff;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        z-index: 90;
+    }
+}
+@mixin outOf($color: #fff, $bg: #d8d8e1) {
+    .outOf{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 7px;
+        color: $color;
+        font-size: 11px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        z-index: 90;
+        background-color: $bg;
+    }
+}
+@mixin imgStyle {
+    .imgCont{
+        position: relative;
+        transition: opacity 3s ease;
+        .img, .imgTwo{
+            max-width: 100%;
+            transition: opacity .3s ease;
+        }
+        .imgTwo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+    }
+    &:hover .img{
+        opacity: 0;
+    }
+    &:hover .imgTwo{
+        opacity: 1;
+    }
+    
+}
+@mixin hideTimer {
+    .imgCont{
+        position: relative;
+        transition: opacity 3s ease;
+        .img, .imgTwo{
+            max-width: 100%;
+            transition: opacity .3s ease;
+        }
+        .imgTwo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        .timer{
+            display: none;
+        }
+    }
+    &:hover .img{
+        opacity: 0;
+    }
+    &:hover .imgTwo{
+        opacity: 1;
+    }
+}
+
     .prodItem{
         padding: 0 0 30px;
         border: 1px solid #f2f2f2;
         position: relative;
         max-width: 300px;
         transition: all .3s ease;
-        .sale{
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0 7px;
-            background-color: #2659cf;
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            z-index: 90;
-        }
-        .outOf{
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 0 7px;
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            z-index: 90;
-            background-color: #d8d8e1;
-        }
+        @include saleGeneral();
+        @include outOf();
         .info{
             padding: 0 15px;
         }
@@ -60,59 +141,11 @@
             margin-right: 8px;
             text-decoration: line-through;
         }
-        .imgCont{
-            position: relative;
-            transition: opacity 3s ease;
-            .img, .imgTwo{
-                max-width: 100%;
-                transition: opacity .3s ease;
-            }
-            .imgTwo{
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-            }
-        }
-        &:hover .img{
-            opacity: 0;
-        }
-        &:hover .imgTwo{
-            opacity: 1;
-        }
-        &:hover .icons{
-            visibility: visible;
-        }
-        .icons{
-            font-size: 20px;
-            color: #fff;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            right: -1px;
-            top: 35px;
-            padding: 10px 8px 6px;
-            text-align: center;
-            background-color: rgba(89,91,212,1);
-            box-shadow: 0 0 10px rgba(0,0,0,.1);
-            visibility: hidden;
-            transition: .3s ease;
-            z-index: 99999;
-            svg{
-                margin-bottom: 10px;
-                &:nth-child(1){
-                    margin-left: -4px;
-                }
-                &:nth-child(4){
-                    margin-bottom: 0;
-                }
-            }
-        }
+        @include imgStyle();
+        @include hiddenIcons();
     }
     //styles for product type of lastChance
     .prodItemLast{
-        width: 342px;
         margin-right: 15px;
         position: relative;
         display: flex;
@@ -120,30 +153,8 @@
         align-items: center;
         border-right: 1px solid #f2f2f2;
         transition: all .3s ease;
-        .sale{
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0 7px;
-            background-color: #2659cf;
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            z-index: 90;
-        }
-        .outOf{
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0 7px;
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            z-index: 90;
-            background-color: #2659cf;
-        }
+        @include saleGeneral();
+        @include outOf(#fff, #2659cf);
         .info{
             padding: 0 15px;
             flex: 0 0 60%;
@@ -172,64 +183,15 @@
             margin-right: 8px;
             text-decoration: line-through;
         }
-        .imgCont{
-            position: relative;
-            transition: opacity 3s ease;
-            .timer{
-                display: none;
-            }
-            .img, .imgTwo{
-                max-width: 100%;
-                transition: opacity .3s ease;
-            }
-            .imgTwo{
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-            }
-        }
-        &:hover .img{
-            opacity: 0;
-        }
-        &:hover .imgTwo{
-            opacity: 1;
-        }
-        &:hover .icons{
-            visibility: visible;
-        }
-        .icons{
-            font-size: 20px;
-            color: #fff;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            right: -1px;
-            top: 28px;
-            padding: 10px 8px 6px;
-            text-align: center;
-            background-color: rgba(89,91,212,1);
-            box-shadow: 0 0 10px rgba(0,0,0,.1);
-            visibility: hidden;
-            transition: .3s ease;
-            z-index: 99999;
-            svg{
-                margin-bottom: 10px;
-                &:nth-child(1){
-                    margin-left: -4px;
-                }
-                &:nth-child(4){
-                    margin-bottom: 0;
-                }
-            }
-        }
+       
+        @include hideTimer();
+        @include hiddenIcons();
     }
     //styles for prodItem bestsellers
     .prodItemBestSec{
         display: flex;
         flex-wrap: nowrap;
-        flex: 0 0 50%;
+        flex: 0 0 49%;
         border: 1px solid #f2f2f2;
         position: relative;
         background: #fff;
@@ -238,34 +200,15 @@
         align-items: center;
         max-width: 482px;
         transition: all .3s ease;
-        .sale{
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0 27px;
-            background-color: #2659cf;
-            color: #fff;
-            font-size: 12px;
-            line-height: 25px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            z-index: 90;
-        }
-        .outOf{
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 0 7px;
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            z-index: 90;
-            background-color: #d8d8e1;
-        }
+        @include saleGeneral(27px);
+        @include outOf();
         .info{
             width: 50%;
             padding-left: 15px;
+            div{
+                border-top: none;
+                box-shadow: none;
+            }
         }
         .brend{
             display: none;
@@ -290,92 +233,21 @@
             margin-right: 8px;
             text-decoration: line-through;
         }
-        .imgCont{
-            position: relative;
-            transition: opacity 3s ease;
-            .img, .imgTwo{
-                max-width: 100%;
-                transition: opacity .3s ease;
-            }
-            .imgTwo{
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-            }
-            .timer{
-                display: none;
-            }
-        }
-        &:hover .img{
-            opacity: 0;
-        }
-        &:hover .imgTwo{
-            opacity: 1;
-        }
-        &:hover .icons{
-            visibility: visible;
-        }
-        .icons{
-            font-size: 20px;
-            color: #fff;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            right: -1px;
-            top: 35px;
-            padding: 10px 8px 6px;
-            text-align: center;
-            background-color: rgba(89,91,212,1);
-            box-shadow: 0 0 10px rgba(0,0,0,.1);
-            visibility: hidden;
-            transition: .3s ease;
-            z-index: 99999;
-            svg{
-                margin-bottom: 10px;
-                &:nth-child(1){
-                    margin-left: -4px;
-                }
-                &:nth-child(4){
-                    margin-bottom: 0;
-                }
-            }
-        }
+        
+        @include hideTimer();
+        
+        @include hiddenIcons();
     }
     .prodItemBestMain{
         padding: 0 0 30px;
         border: 1px solid #f2f2f2;
         background-color: #fff;
-        margin: 0 5px 0 5px;
+        margin: 0 5px 0 0px;
         position: relative;
         max-width: 300px;
         transition: all .3s ease;
-        .sale{
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0 27px;
-            background-color: #2659cf;
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 2px;
-            line-height: 24px;
-            text-transform: uppercase;
-            z-index: 90;
-        }
-        .outOf{
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0 7px;
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            z-index: 90;
-            background-color: #2659cf;
-        }
+        @include saleGeneral(27px);
+        @include outOf(#fff, #2659cf);
         .info{
             padding: 0 15px;
         }
@@ -400,57 +272,47 @@
             margin-right: 8px;
             text-decoration: line-through;
         }
-        .imgCont{
-            position: relative;
-            transition: opacity 3s ease;
-            .img, .imgTwo{
-                max-width: 100%;
-                transition: opacity .3s ease;
-            }
-            .imgTwo{
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-            }
-            .timer{
-                display: none
-            }
-        }
-        &:hover .img{
-            opacity: 0;
-        }
-        &:hover .imgTwo{
-            opacity: 1;
-        }
-        &:hover .icons{
-            visibility: visible;
-        }
-        .icons{
-            font-size: 20px;
-            color: #fff;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            right: -1px;
-            top: 35px;
-            padding: 10px 8px 6px;
-            text-align: center;
-            background-color: rgba(89,91,212,1);
-            box-shadow: 0 0 10px rgba(0,0,0,.1);
-            visibility: hidden;
-            transition: .3s ease;
-            z-index: 99999;
-            svg{
-                margin-bottom: 10px;
-                &:nth-child(1){
-                    margin-left: -4px;
-                }
-                &:nth-child(4){
-                    margin-bottom: 0;
-                }
-            }
-        }
+        
+            @include hideTimer();
+        
+        @include hiddenIcons();
     }
-}
+    // styles for slidar
+    .prodItemSlider{
+        position: relative;
+        transition: all .3s ease;
+        @include saleGeneral();
+        @include outOf();
+        .info{
+            padding: 0 15px;
+            text-align: center;
+            div{
+                border-top: none;
+                box-shadow: none;
+            }
+        }
+        .brend{
+            display: none;
+        }
+        .name{
+            font-size: 16px;
+            line-height: 19px;
+            color: #404040;
+            margin: 0 0 80px 0;
+            font-weight: 600;
+        }
+        .prise{
+            color: rgba(89,91,212,1);
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .prevPrise{
+            display: inline-block;
+            font-size: 15px;
+            color: #bdbdbd;
+            margin: 30px 8px 20px 0;
+            text-decoration: line-through;
+        }
+        @include hideTimer();
+        @include hiddenIcons();
+    }

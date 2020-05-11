@@ -5,4 +5,12 @@
         font-weight: 400;
         margin: 30px 0!important;
     }
+    .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        >div:nth-child(4) {
+            margin-right: 0;
+        }
+        }
 }

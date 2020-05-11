@@ -5,8 +5,9 @@ import Timer from 'src/generalElements/productItem/timer'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './styles.css'
+import PropTypes from 'prop-types'
 
-const SliderBig = () => {
+const SliderBig = (props) => {
 	let phone = itemList[1]
 	let headphone = itemList[5]
 	const settings = {
@@ -38,6 +39,9 @@ const SliderBig = () => {
 			</div>
 		</Slider>
 	)
+}
+SliderBig.propTypes = {
+	type: PropTypes.string
 }
 
 export default SliderBig

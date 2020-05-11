@@ -6,7 +6,9 @@ const LastChanseToBuy = () => {
 	return (
 		<div className={styles.chanseCont}>
 			<h4>Last Chance to buy</h4>
-			<ProductItem type='lastChanse' numberOf={3}/>
+			<div className={styles.content}>
+				<ProductItem type='lastChanse' numberOf={3}/>
+			</div>
 		</div>
 	)
 }

@@ -1,0 +1,61 @@
+.bestsellersCont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sliderContainer{
+    max-width: 33%;
+    background: #fff;
+    margin-right: 10px;   
+}
+.sliderElement{
+    display: flex;
+}
+.itemsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.long{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.thin{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.thin >div:nth-child(1){
+    margin-left: 0;
+}
+ul.dots{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    list-style: none;
+ }
+.dots >li{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+}
+.dots li.slick-active{
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.dots li button{
+    padding: 0;
+    margin: 0 auto;
+    outline: none;
+    content: none;
+    width: 6px;
+    height: 6px;
+    background: #000;
+    color: #000;
+    overflow: hidden;
+    border: none;
+    border-radius: 50%;
+}

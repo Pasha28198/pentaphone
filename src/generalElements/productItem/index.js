@@ -15,19 +15,23 @@ const itemTypes = {
 	'LatestProd': [],
 	'hotDeals': [],
 	'viewed': [],
-	'slider': []
+	'slider': styles.prodItemSlider
 }
 
 const ProductItem = (props) => {
 	function returnProductItem (type, numberOf) {
 		let currentStylesList
 		let saleIsNumber = false
+		let itemImg = 0
 		Object.keys(itemTypes).map((elem) => {
 			if (type === elem) {
 				currentStylesList = itemTypes[elem]
 			}
 			if (type === 'bestsellersMain' || 'bestsellersSec' || 'hotDeals') {
 				saleIsNumber = true
+			}
+			if (type === 'slider') {
+				itemImg = 2
 			}
 		})
 
@@ -49,14 +53,14 @@ const ProductItem = (props) => {
 						<FontAwesomeIcon icon={faEye} />
 					</div>
 					<div className={styles.imgCont}>
-						<img className={styles.img} src={item.img[0]} alt={item.name}/>
-						<img className={styles.imgTwo} src={item.img[1]} alt={item.name} />
+						<img className={styles.img} src={item.img[itemImg]} alt={item.name}/>
+						<img className={styles.imgTwo} src={item.img[itemImg + 1]} alt={item.name} />
 						<div className={styles.timer}>{item.timer}</div>
 					</div>
 					<div className={styles.info}>
 						<p className={styles.brend}>{item.brend}</p>
 						<h6 className={styles.name}>{item.name}</h6>
-						{type === 'bestsellersSec' ? <Timer className={styles.timerSecondType}/> : null}
+						{type === 'bestsellersSec' || type === 'slider' ? <Timer /> : null}
 						<span className={styles.prevPrise}>{item.sale !== null ? `$ ${item.prise + (item.prise * (item.sale / 100))}` : null}</span><span className={styles.prise}>${item.prise}</span>
 					</div>
 				</div>
@@ -64,9 +68,11 @@ const ProductItem = (props) => {
 		)
 	}
 	return (
-		<div className={styles.productContainer}>
+		// <div className={styles.productContainer}>
+		<React.Fragment>
 			{returnProductItem(props.type, props.numberOf)}
-		</div>
+		</React.Fragment>
+		// </div>
 	)
 }
 ProductItem.propTypes = {
