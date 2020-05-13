@@ -249,6 +249,7 @@
         @include saleGeneral(27px);
         @include outOf(#fff, #2659cf);
         .info{
+            margin-top: 20px;
             padding: 0 15px;
         }
         .brend{
@@ -314,5 +315,46 @@
             text-decoration: line-through;
         }
         @include hideTimer();
+        @include hiddenIcons();
+    }
+    // styles for prod item latestProd
+    .latestProd{
+        padding: 0 0 30px;
+        border: 1px solid #f2f2f2;
+        position: relative;
+        max-width: 300px;
+        min-width: 150px;
+        margin: 0 5px;
+        transition: all .3s ease;
+        @include saleGeneral();
+        @include outOf();
+        .info{
+            padding: 0 15px;
+        }
+        .brend{
+            margin: 15px 0 8px;
+            font-size: 13px;
+            color: #6a6a6a;
+            font-style: italic; 
+        }
+        .name{
+            font-size: 16px;
+            line-height: 19px;
+            color: #404040;
+            margin-bottom: 13px;
+            font-weight: 600;
+        }
+        .prise{
+            color: rgba(89,91,212,1);
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .prevPrise{
+            font-size: 13px;
+            color: #bdbdbd;
+            margin-right: 8px;
+            text-decoration: line-through;
+        }
+        @include imgStyle();
         @include hiddenIcons();
     }

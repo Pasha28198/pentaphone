@@ -6,6 +6,7 @@ import TrendingDeales from './trendingDeales/trendingDeals'
 import LastChanseToBuy from './lastChanceToBuy'
 import Bestsellers from './bestsellers'
 import PropTypes from 'prop-types'
+import LatestProduct from './latestProduct'
 
 class Home extends React.Component {
 	render () {
@@ -82,6 +83,9 @@ class Home extends React.Component {
 					<div className={styles.contentContainer}>
 						<Bestsellers />
 					</div>
+				</div>
+				<div className={styles.contentContainer}>
+					<LatestProduct />
 				</div>
 			</div>
 		)

@@ -12,14 +12,14 @@ const itemTypes = {
 	'trending': styles.prodItem,
 	'bestsellersMain': styles.prodItemBestMain,
 	'bestsellersSec': styles.prodItemBestSec,
-	'LatestProd': [],
+	'LatestProd': styles.latestProd,
 	'hotDeals': [],
 	'viewed': [],
 	'slider': styles.prodItemSlider
 }
 
 const ProductItem = (props) => {
-	function returnProductItem (type, numberOf) {
+	function returnProductItem (type, numberOf, startIndex = 0) {
 		let currentStylesList
 		let saleIsNumber = false
 		let itemImg = 0
@@ -38,45 +38,47 @@ const ProductItem = (props) => {
 		return (
 			itemList.map((item, i) => {
 				let sale = 'SALE'
-				if (i > numberOf) { return }
+				if (i < startIndex || i > startIndex + numberOf) { return }
 				if (saleIsNumber && item.sale) {
 					sale = item.sale + '%'
 				}
-
-				return <div key={i} className={currentStylesList}>
-					<div className={styles.outOf}>{item.outOf}</div>
-					<div className={styles.sale}>{item.sale ? sale : null}</div>
-					<div className={styles.icons}>
-						<FontAwesomeIcon icon={faShoppingCart} />
-						<FontAwesomeIcon icon={faHeart} />
-						<FontAwesomeIcon icon={faRandom} />
-						<FontAwesomeIcon icon={faEye} />
-					</div>
-					<div className={styles.imgCont}>
-						<img className={styles.img} src={item.img[itemImg]} alt={item.name}/>
-						<img className={styles.imgTwo} src={item.img[itemImg + 1]} alt={item.name} />
-						<div className={styles.timer}>{item.timer}</div>
-					</div>
-					<div className={styles.info}>
-						<p className={styles.brend}>{item.brend}</p>
-						<h6 className={styles.name}>{item.name}</h6>
-						{type === 'bestsellersSec' || type === 'slider' ? <Timer /> : null}
-						<span className={styles.prevPrise}>{item.sale !== null ? `$ ${item.prise + (item.prise * (item.sale / 100))}` : null}</span><span className={styles.prise}>${item.prise}</span>
-					</div>
-				</div>
+				if (i >= startIndex) {
+					return (
+						<div key={i} className={currentStylesList}>
+							<div className={styles.outOf}>{item.outOf}</div>
+							<div className={styles.sale}>{item.sale ? sale : null}</div>
+							<div className={styles.icons}>
+								<FontAwesomeIcon icon={faShoppingCart} />
+								<FontAwesomeIcon icon={faHeart} />
+								<FontAwesomeIcon icon={faRandom} />
+								<FontAwesomeIcon icon={faEye} />
+							</div>
+							<div className={styles.imgCont}>
+								<img className={styles.img} src={item.img[itemImg]} alt={item.name}/>
+								<img className={styles.imgTwo} src={item.img[itemImg + 1]} alt={item.name} />
+								<div className={styles.timer}>{item.timer}</div>
+							</div>
+							<div className={styles.info}>
+								<p className={styles.brend}>{item.brend}</p>
+								<h6 className={styles.name}>{item.name}</h6>
+								{type === 'bestsellersSec' || type === 'slider' ? <Timer /> : null}
+								<span className={styles.prevPrise}>{item.sale !== null ? `$ ${item.prise + (item.prise * (item.sale / 100))}` : null}</span><span className={styles.prise}>${item.prise}</span>
+							</div>
+						</div>
+					)
+				}
 			})
 		)
 	}
 	return (
-		// <div className={styles.productContainer}>
 		<React.Fragment>
-			{returnProductItem(props.type, props.numberOf)}
+			{returnProductItem(props.type, props.numberOf, props.startIndex)}
 		</React.Fragment>
-		// </div>
 	)
 }
 ProductItem.propTypes = {
 	type: PropTypes.string,
-	numberOf: PropTypes.number
+	numberOf: PropTypes.number,
+	startIndex: PropTypes.number
 }
 export default ProductItem

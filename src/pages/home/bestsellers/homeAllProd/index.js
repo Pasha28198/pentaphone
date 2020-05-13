@@ -18,16 +18,16 @@ const HomeAllProd = (props) => {
 		<div className='bestsellersCont'>
 			<div className='sliderContainer'>
 				<Slider {...settings}>
-					<div className='sliderElement'><ProductItem type='slider' numberOf={0}/></div>
-					<div className='sliderElement'><ProductItem type='slider' numberOf={0}/></div>
+					<div className='sliderElement'><ProductItem type='slider' numberOf={0} /></div>
+					<div className='sliderElement'><ProductItem type='slider' numberOf={0} /></div>
 				</Slider>
 			</div>
 			<div className='itemsContainer'>
 				<div className='long'>
-					<ProductItem type='bestsellersSec' numberOf={1}/>
+					<ProductItem type='bestsellersSec' numberOf={1} />
 				</div>
 				<div className='thin'>
-					<ProductItem type='bestsellersMain' numberOf={3}/>
+					<ProductItem type='bestsellersMain' numberOf={3} startIndex={2}/>
 				</div>
 			</div>
 		</div>
