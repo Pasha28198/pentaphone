@@ -8,6 +8,8 @@ import Bestsellers from './bestsellers'
 import PropTypes from 'prop-types'
 import LatestProduct from './latestProduct'
 import Baners from './baners'
+import HotDeals from './hotDeals'
+import RecentlyViewed from './recentlyViewed'
 
 class Home extends React.Component {
 	render () {
@@ -80,6 +82,8 @@ class Home extends React.Component {
 						<Baners index={2} />
 						<Baners index={3} />
 					</div>
+					<HotDeals />
+					<RecentlyViewed />
 				</div>
 			</div>
 		)

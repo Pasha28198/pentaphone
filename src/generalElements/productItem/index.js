@@ -13,8 +13,8 @@ const itemTypes = {
 	'bestsellersMain': styles.prodItemBestMain,
 	'bestsellersSec': styles.prodItemBestSec,
 	'LatestProd': styles.latestProd,
-	'hotDeals': [],
-	'viewed': [],
+	'hotDeals': styles.hotDeals,
+	'viewed': styles.viewed,
 	'slider': styles.prodItemSlider
 }
 

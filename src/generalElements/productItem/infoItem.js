@@ -8,7 +8,10 @@ export const itemList = [
 			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/mcbook-799x799-242x269.png',
 			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-241x268.png',
 			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/mcbook-799x799-483x451.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-483x451.png'],
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-483x451.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/mcbook-799x799-160x160.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-160x160.png'
+		],
 		timer: <Timer/>,
 		sale: 5,
 		outOf: '' },
@@ -18,7 +21,11 @@ export const itemList = [
 		img: [
 			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-242x269.png',
 			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-silver-1-599x599-241x268.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-410x530.png'],
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-410x530.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-160x160.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-160x160.png',
+			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-silver-1-599x599-160x160.png'
+		],
 		timer: <Timer/>,
 		sale: 3,
 		outOf: '' },
