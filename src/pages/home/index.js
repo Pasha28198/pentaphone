@@ -7,6 +7,7 @@ import LastChanseToBuy from './lastChanceToBuy'
 import Bestsellers from './bestsellers'
 import PropTypes from 'prop-types'
 import LatestProduct from './latestProduct'
+import Baners from './baners'
 
 class Home extends React.Component {
 	render () {
@@ -27,7 +28,6 @@ class Home extends React.Component {
 			}
 
 		}
-		// console.log(this.props.match.params)
 		return (
 			<div>
 				<div className={styles.greyCont}>
@@ -59,19 +59,9 @@ class Home extends React.Component {
 
 							</ParallaxMousemove>
 						</div>
-
-						<div className={styles.topBaners}>
-							<div>
-								<h3>Keytar blue bottle</h3>
-								<p>Cardigan lyft ennui listicle bespoke,
-								pitchfork cloud bread subway tile disrupt quinoa gluten-free slow-carb</p>
-								<Button text='shop now' linkTo='#'></Button>
-							</div>
-							<div>
-								<h3>Truffaut gluten-free</h3>
-								<p>Organic cardigan flannel four dollar toast salvia dreamcatcher subway tile aesthetic kale chips.</p>
-								<Button text='shop now' linkTo='#'></Button>
-							</div>
+						<div className={styles.containerForBaners}>
+							<Baners index={0} />
+							<Baners index={1} />
 						</div>
 					</div>
 				</div>
@@ -86,6 +76,10 @@ class Home extends React.Component {
 				</div>
 				<div className={styles.contentContainer}>
 					<LatestProduct />
+					<div className={styles.containerForBaners}>
+						<Baners index={2} />
+						<Baners index={3} />
+					</div>
 				</div>
 			</div>
 		)
