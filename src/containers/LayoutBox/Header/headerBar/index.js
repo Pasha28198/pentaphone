@@ -12,7 +12,7 @@ import PagesList from './ dropDownList/pagesList'
 import ElementsList from './ dropDownList/elementsList'
 
 const HeaderBar = (props) => {
-	console.log(props)
+	console.log(window.innerWidth)
 	const classes = [styles.containerAdd, 'container']
 	const location = props.location
 
@@ -69,6 +69,9 @@ const HeaderBar = (props) => {
 									? 	<CategoryList/>
 									: null
 							}
+							<div className={styles.mobileBurger}>
+								<FontAwesomeIcon icon={faBars} />
+							</div>
 
 						</div>
 					</div>
@@ -77,6 +80,9 @@ const HeaderBar = (props) => {
 							<ul className={styles.links}>
 								{ renderLinks() }
 							</ul>
+						</div>
+						<div className={styles.linksMobile}>
+							<FontAwesomeIcon icon={faBars} />
 						</div>
 					</div>
 				</div>

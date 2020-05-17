@@ -67,26 +67,6 @@ class Header extends Component {
 					icon={this.state.icon}
 				/>
 			</header>
-			//
-			// <header styleName="wrapperHeader">
-			// 	<div
-			// 		styleName="logoWrapper"
-			// 	>
-			// 		<img
-			// 			styleName="arrow"
-			// 			src={burger}
-			// 			alt="arrow"
-			// 			onClick={openNav}
-			// 		/>
-			// 		<If condition={!choose(currentLocation)}>
-			// 			<h2
-			// 				onClick={pushToHome}
-			// 				styleName="lable"
-			// 			>Re<span>Sell</span></h2>
-			// 		</If>
-			// 		<h3>{choose(currentLocation)}</h3>
-			// 	</div>
-			// </header>
 		)
 	}
 }

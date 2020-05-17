@@ -1,8 +1,15 @@
 .container{
     margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 .main{
     padding: 40px 80px;
+    @media screen and (max-width: 600px) {
+        padding: 40px 15px;
+    }
 }
 .logo{
     padding: 0 15px;
@@ -13,6 +20,9 @@
     >a{
         font-size: 20px;
         padding: 0 20px;
+        @media screen and (max-width: 600px) {
+            padding: 0 10px;
+        }
         :hover{
             cursor: pointer;
         }
@@ -36,6 +46,11 @@
     max-width: 550px;
     margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+    .formContainer{
+      display: none;
+    }
+  }
 .form{
     min-width: 550px;
     position: relative;

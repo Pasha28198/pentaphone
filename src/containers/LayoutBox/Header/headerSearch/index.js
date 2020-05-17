@@ -64,38 +64,34 @@ class HeaderSearch extends Component {
 	render () {
 		return (
 			<div className={styles.main}>
-				<div styleName={styles.container}>
-					<div className='row align-items-center justify-content-between'>
-						<div className='col-xl-2 col-lg-2 col-md-3 col-sm-2 col-6'>
-							<a className={styles.logo}><img alt="logo" /></a>
-						</div>
-						<div className="col-sm col-6">
-							<div className={styles.formContainer}>
-								<form className={styles.form}>
-									<input
-										type='text'
-										className={styles.input}
-										placeholder='What are you looking for?'
-									/>
-									<div onClick={ () => this.setState({ listOfCat: !this.state.listOfCat }) }>
-										<div>{this.state.choosenCat}</div>
-										{
-											this.renderListOfCat()
-										}
-									</div>
-									<button><img src={search} alt='search' /></button>
-								</form>
+				<div className={styles.container}>
+
+					<a className={styles.logo}><img src='https://elab.stylemixthemes.com/demo-1/wp-content/uploads/sites/2/2019/02/logo.svg' alt="logo" /></a>
+
+					<div className={styles.formContainer}>
+						<form className={styles.form}>
+							<input
+								type='text'
+								className={styles.input}
+								placeholder='What are you looking for?'
+							/>
+							<div onClick={ () => this.setState({ listOfCat: !this.state.listOfCat }) }>
+								<div>{this.state.choosenCat}</div>
+								{
+									this.renderListOfCat()
+								}
 							</div>
-						</div>
-						<div className='col-xl-2 col-lg-2 col-md-3 col-sm-2 col-6'>
-							<div className={styles.iconsCont}>
-								<a><FontAwesomeIcon icon={faRandom} /></a>
-								<a><FontAwesomeIcon icon={faUser} /></a>
-								<a><FontAwesomeIcon icon={faHeart} /></a>
-								<a><FontAwesomeIcon icon={faShoppingBag} /></a>
-							</div>
-						</div>
+							<button><img src={search} alt='search' /></button>
+						</form>
 					</div>
+
+					<div className={styles.iconsCont}>
+						<a><FontAwesomeIcon icon={faRandom} /></a>
+						<a><FontAwesomeIcon icon={faUser} /></a>
+						<a><FontAwesomeIcon icon={faHeart} /></a>
+						<a><FontAwesomeIcon icon={faShoppingBag} /></a>
+					</div>
+
 				</div>
 			</div>
 		)

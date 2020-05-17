@@ -54,3 +54,6 @@ ul.myDots{
     border: none;
     border-radius: 50%;
 }
+.myDots img{
+    width: 100%;
+}

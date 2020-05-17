@@ -10,6 +10,7 @@
     position: relative;
     max-width: 300px;
     min-width: 150px;
+    margin-left: 15px;
     padding: 0 30px 0 27px;
     background-color: rgba(89,91,212,1);
     color: #fff;
@@ -27,7 +28,21 @@
             >div{
                 font-size: 20px;
             }
-    }    
+    }
+    .mobileBurger{
+        display: none;
+        @media screen and (max-width: 600px) {
+            display: block;
+            font-size: 24px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+
 }
 .category:before{
     content: '';
@@ -68,8 +83,19 @@
     >a:hover div{
         display: flex;
     }
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 }
-        
+.linksMobile{
+    display: none;
+    @media screen and (max-width: 600px) {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        text-align: end;
+    }
+}        
 .clicked{
     background: rgba(89,91,212,1);
 }

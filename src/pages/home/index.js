@@ -33,7 +33,6 @@ class Home extends React.Component {
 				position: 'relative',
 				marginTop: '-60px'
 			}
-
 		}
 		return (
 			<div>
@@ -65,6 +64,16 @@ class Home extends React.Component {
 								</div>
 
 							</ParallaxMousemove>
+						</div>
+						<div className={styles.homeTitleMobile}>
+							<div>
+								<h4>Do even more</h4>
+								<h2>The worlds first infinity phone</h2>
+								<p>The expansive display streyches from edge to edge,
+										giving you the most amount of screen in the list
+										amount of space
+								</p>
+							</div>
 						</div>
 						<div className={styles.containerForBaners}>
 							<Baners index={0} />
