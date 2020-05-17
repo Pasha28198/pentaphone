@@ -1,16 +1,36 @@
 import Timer from './timer'
 import React from 'react'
+
+import amazfit1 from '../../assets/itemIcons/amazfitN1.png'
+import amazfit2 from '../../assets/itemIcons/amazfitN2.png'
+import macbook1 from '../../assets/itemIcons/mcbookN1.png'
+import macbook2 from '../../assets/itemIcons/mcbookN2.png'
+import macbookMedium1 from '../../assets/itemIcons/mcbookMedium.png'
+import macbookMedium2 from '../../assets/itemIcons/macbookMedium2.png'
+import headphones1 from '../../assets/itemIcons/H4_CharcoalGreyN1.png'
+import headphones2 from '../../assets/itemIcons/H4_CharcoalGreyN2.png'
+import headphonesLarge from '../../assets/itemIcons/H4_CharcoalGreyLarge.png'
+import iphone1 from '../../assets/itemIcons/iphoneN1.png'
+import iphone2 from '../../assets/itemIcons/iphoneN2.png'
+import iphoneLarge from '../../assets/itemIcons/iphoneLarge.png'
+import mi71 from '../../assets/itemIcons/mi7N1.jpg'
+import mi72 from '../../assets/itemIcons/mi7N2.jpg'
+import whiteWatch from '../../assets/itemIcons/white-watchN1.png'
+import whiteWatch2 from '../../assets/itemIcons/white-watchN2.png'
+import qled1 from '../../assets/itemIcons/qledtvN1.jpg'
+import qled2 from '../../assets/itemIcons/qledtvN2.png'
+import ps4 from '../../assets/itemIcons/playstationN1.jpg'
+import joystick from '../../assets/itemIcons/joystickN2.png'
+
 export const itemList = [
 	{name: 'AA Laptop Air',
 		brend: 'Asus',
 		prise: 849,
 		img: [
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/mcbook-799x799-242x269.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-241x268.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/mcbook-799x799-483x451.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-483x451.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/mcbook-799x799-160x160.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/macbook-1-799x799-160x160.png'
+			`${macbook1}`,
+			`${macbook2}`,
+			`${macbookMedium1}`,
+			`${macbookMedium2}`
 		],
 		timer: <Timer/>,
 		sale: 5,
@@ -19,12 +39,9 @@ export const itemList = [
 		brend: 'Apple',
 		prise: 1100,
 		img: [
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-242x269.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-silver-1-599x599-241x268.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-410x530.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-160x160.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-gols-1-599x599-160x160.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/iphone-xs-silver-1-599x599-160x160.png'
+			`${iphone1}`,
+			`${iphone2}`,
+			`${iphoneLarge}`
 		],
 		timer: <Timer/>,
 		sale: 3,
@@ -33,8 +50,9 @@ export const itemList = [
 		brend: 'Samsung',
 		prise: 2199,
 		img: [
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/Без-имени-1-799x799-242x269.jpg',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/flower-curved-799x799-241x268.png'],
+			`${qled1}`,
+			`${qled2}`
+		],
 		timer: null,
 		sale: null,
 		outOf: 'out of stock' },
@@ -42,10 +60,9 @@ export const itemList = [
 		brend: 'Samsung',
 		prise: 174,
 		img: [
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/amazfit_equator_rose_gold_closed_loop-999x999-242x269.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/amazfit_moonbeam_white_open_clasp-999x999-241x268.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/white-watch-799x799-483x451.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/amazfit_bip_smartwatch_white_cloud_front-999x999-483x451.png'],
+			`${amazfit1}`,
+			`${amazfit2}`
+		],
 		timer: <Timer/>,
 		sale: 17,
 		outOf: '' },
@@ -53,8 +70,9 @@ export const itemList = [
 		brend: 'Samsung',
 		prise: 75,
 		img: [
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/playstation-1099x1099-242x269.jpg',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/joystick-599x599-241x268.png'],
+			`${ps4}`,
+			`${joystick}`
+		],
 		timer: null,
 		sale: 20,
 		outOf: '' },
@@ -62,9 +80,10 @@ export const itemList = [
 		brend: 'Sony',
 		prise: 129,
 		img: [
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/H4_CharcoalGrey_1000x1000-999x999-242x269.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/H4_1000x1000_vapour-999x999-241x268.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/H4_1000x1000_vapour-999x999-410x530.png'],
+			`${headphones1}`,
+			`${headphones2}`,
+			`${headphonesLarge}`
+		],
 		timer: <Timer/>,
 		sale: null,
 		outOf: '' },
@@ -72,8 +91,9 @@ export const itemList = [
 		brend: 'Xiaomi',
 		prise: 199,
 		img: [
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/mi7-599x599-242x269.jpg',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/05/honorr-599x599-241x268.jpg'],
+			`${mi71}`,
+			`${mi72}`
+		],
 		timer: null,
 		sale: null,
 		outOf: '' },
@@ -81,8 +101,9 @@ export const itemList = [
 		brend: 'Apple',
 		prise: 399,
 		img: [
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/white-watch-799x799-242x269.png',
-			'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/04/amazfit_bip_smartwatch_white_cloud_front-999x999-241x268.png'],
+			`${whiteWatch}`,
+			`${whiteWatch2}`
+		],
 		timer: <Timer/>,
 		sale: 24,
 		outOf: '' }

@@ -2,12 +2,16 @@ import React from 'react'
 import styles from './styles.scss'
 import PropTypes from 'prop-types'
 import Button from 'src/generalElements/button/button'
+import ban1 from 'src/assets/banners/ban1.png'
+import ban2 from 'src/assets/banners/ban2.png'
+import ban3 from 'src/assets/banners/ban3.jpg'
+import ban4 from 'src/assets/banners/ban4.jpg'
 
 const banersInfo = [
 	{
 		title: 'Keytar blue bottle',
 		subtitle: 'Cardigan lyft ennui listicle bespoke, pitchfork cloud bread subway tile disrupt quinoa gluten-free slow-carb',
-		img: 'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/07/wireless-headphones-719x349.png',
+		img: `${ban1}`,
 		color: null,
 		text: 'shop now',
 		link: '#'
@@ -15,7 +19,7 @@ const banersInfo = [
 	{
 		title: 'Truffaut gluten-free',
 		subtitle: 'Organic cardigan flannel four dollar toast salvia dreamcatcher subway tile aesthetic kale chips.',
-		img: 'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/07/smart_speakers-719x349.png',
+		img: `${ban2}`,
 		color: null,
 		text: 'shop now',
 		link: '#'
@@ -23,7 +27,7 @@ const banersInfo = [
 	{
 		title: 'Style & performance',
 		subtitle: 'Polaroid subway tile cronut la croix. Enamel pin dreamcatcher echo park PBR&B. Scenester squid meh vinyl retro',
-		img: 'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/shutterstock_146498354-719x314.jpg',
+		img: `${ban3}`,
 		color: '#fff',
 		text: 'read more',
 		link: '#'
@@ -31,7 +35,7 @@ const banersInfo = [
 	{
 		title: 'Smart Televisions',
 		subtitle: 'Cardigan lyft ennui listicle bespoke, pitchfork cloud bread subway tile disrupt quinoa gluten-free slow-carb',
-		img: 'https://elab.scdn8.secure.raxcdn.com/wp-content/uploads/sites/2/2019/06/shutterstock_14649835-1-719x314.jpg',
+		img: `${ban4}`,
 		color: null,
 		text: 'read more',
 		link: '#'

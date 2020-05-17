@@ -1,148 +1,140 @@
 .footerWrapper {
   width: 100%;
-  margin-top: 40px;
-  left: 0;
-  bottom: 0;
   position: relative;
   z-index: 8;
-  article{
-    display: none;
-    width: 670px;
-    flex-direction: column;
-    padding-top: 27px;
-    margin: 0 auto;
-    section{
-      display: flex;
-      justify-content: space-between;
+  .footerTopBar{
+    background: linear-gradient(to right, #3b4466, #3b4466 55%, #595bd4 55%, #595bd4 100%);
+    @media screen and (max-width: 600px){
+      background: #3b4466;
     }
-    .columnWrapper{
-      padding-bottom: 25px;
-      div{
-        margin: 0;
-        width: 25%;
-        box-sizing: border-box;
+    width: 100%;
+    .container{
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      @media screen and (max-width: 600px){
+        flex-wrap: wrap;
+        margin: 0 15px;
+      }
+      .contactsContainer{
+        padding: 27px 0;
+        width: 50%;
         display: flex;
-        flex-direction: column;
-
-        h2{
-          font-size: 16px;
-          font-weight: normal;
-          color: #323b45;
-        }
-
-        a{
-          color: #5c6979;
-          font-size: 14px;
-          font-weight: 300;
-          margin-bottom: 5px;
-        }
-
-        a:hover{
-          color: #fa2a00;
-        }
-
-        img{
-          width: 76px;
-          &:first-child{
-            margin-bottom: 25px;
-          }
-        }
-
-        &:last-child{
-          align-items: flex-end;
-
-        }
-      }
-    }
-
-  }
-  .copyright_box {
-    margin: 30px 0 0;
-    padding: 30px 0 30px;
-    background-color: rgba(247,248,249,1) !important;
-    text-align: center;
-    .copyright_text {
-        font-size: 13px;
-        line-height: 19px;
-    }
-    .copyright-image {
-        margin: 20px 0 0;
-    }
-  }
-  
-  .elab_mailchimp {
-    + .copyright_box {
-        margin-top: 0;
-    }
-  }
-  .downPart{
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    border-top: 1px solid #d7dade;
-    height: 67px;
-    >div:first-child{
-      width: 75px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      span{
-        font-size: 16px;
-        font-weight: 300;
-      }
-      img{
-        width: 22px;
-      }
-    }
-    >div:last-child{
-      width: 250px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      p{
-        margin: 0;
-        font-size: 11px;
-        font-weight: 300;
-      }
-      >div{
-        width: 75px;
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        span{
+        @media screen and (max-width: 1300px){
+          flex-wrap: wrap;
+          margin: 0 20px;
+        }
+        .contactsItem{
+          color: #fff;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 15px;
-          img{
-            height: 100%;
+          flex-direction: row;
+          margin: 15px 50px 15px 0;
+          >img{
+            width: 35px;
+            height: 35px;
+            margin-right: 22px;
+          }
+          >div{
+            display: flex;
+            flex-direction: column;
+            >h6{
+              margin: 0 0 10px;
+              font-size: 16px;
+              line-height: 18px;
+              font-weight: 500;
+              white-space: nowrap;
+            }
+            >p{
+              font-size: 18px;
+              line-height: 1.1;
+              font-weight: 300;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+      .subscribeForm{
+        margin-left: 120px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 27px 0;
+        @media screen and (max-width: 1300px){
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          width: 80%;
+          margin-left: 0;
+          max-width: 350px;
+        }
+        >input{
+          padding: 13px 20px;
+          min-width: 400px;
+          background-color: #fff;
+          height: auto;
+          font-size: 15px;
+          color: #000;
+          box-shadow: none !important;
+          border: 0;
+          border-radius: 22px;
+          @media screen and (max-width: 600px){
+            width: 100%;
+            margin-bottom: 20px;
+            min-width: 0;
+          }
+        }
+        >button{
+          margin-left: 16px;
+          position: relative;
+          padding: 13px 20px;
+          min-width: 148px;
+          border: 1px solid #fff;
+          background-color: #595bd4;
+          color: #fff;
+          border-radius: 22px;
+          text-transform: uppercase;
+          font-size: 12px;
+          letter-spacing: 2px;
+          transition: all .15s ease-in-out;
+          @media screen and (max-width: 600px){
+            background-color: #3b4466;
+            margin-left: 0;
+            width: 100%;
+          }
+          &:hover{
+            background-color: #212529;
+            border: 1px solid #212529;
           }
         }
       }
     }
-
+   
   }
-}
-@media screen and (min-width: 1024px){
-  .footerWrapper{
-    padding-left: 329px;
-    height: 243px;
-    border-top: 1px solid #d7dade;
-    article{
-      display: flex;
-    }
-  }
-}
-@media screen and (min-width: 1350px){
-  .footerWrapper{
-    display: none;
-    padding-right: 256px;
-  }
-}
-@media screen and (min-width:1400px){
-  .footerWrapper{
-    display: block;
-    padding-right: 340px;
-  }
+// @media screen and (min-width: 1024px){
+//   .footerWrapper{
+//     padding-left: 329px;
+//     height: 243px;
+//     border-top: 1px solid #d7dade;
+//     article{
+//       display: flex;
+//     }
+//   }
+// }
+// @media screen and (min-width: 1350px){
+//   .footerWrapper{
+//     display: none;
+//     padding-right: 256px;
+//   }
+// }
+// @media screen and (min-width:1400px){
+//   .footerWrapper{
+//     display: block;
+//     padding-right: 340px;
+//   }
 }
 

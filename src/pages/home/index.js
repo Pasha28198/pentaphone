@@ -10,6 +10,11 @@ import LatestProduct from './latestProduct'
 import Baners from './baners'
 import HotDeals from './hotDeals'
 import RecentlyViewed from './recentlyViewed'
+import logo1 from 'assets/logoSponsors/logoconsulting.png'
+import logo5 from 'assets/logoSponsors/logomotors.png'
+import logo3 from 'assets/logoSponsors/logomasterstudy.png'
+import logo2 from 'assets/logoSponsors/04.jpg'
+import logo4 from 'assets/logoSponsors/03.jpg'
 
 class Home extends React.Component {
 	render () {
@@ -84,6 +89,13 @@ class Home extends React.Component {
 					</div>
 					<HotDeals />
 					<RecentlyViewed />
+					<div className={styles.logoSponsors}>
+						<img src={logo3} alt=''/>
+						<img src={logo2} alt=''/>
+						<img src={logo4} alt=''/>
+						<img src={logo1} alt=''/>
+						<img src={logo5} alt=''/>
+					</div>
 				</div>
 			</div>
 		)

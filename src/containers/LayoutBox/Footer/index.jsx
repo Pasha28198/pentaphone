@@ -1,4 +1,7 @@
 import React from 'react'
+import skype from 'assets/footer/skype.svg'
+import phone from 'assets/footer/phone-call.svg'
+import mail from 'assets/footer/mail.svg'
 
 import configs from './configs'
 import visa from 'assets/svg/visa.svg'
@@ -13,67 +16,35 @@ import styles from './styles.scss'
 
 export default () =>
 	<footer className={styles.footerWrapper}>
-		<article>
-			<section className={styles.columnWrapper}>
-				<For each='configs' index='i' of={configs}>
-					<div key={i}>
-						<h2>{configs.label}</h2>
-						<For each='list' of={configs.list}>
-							<Choose>
-								<When condition={list.link}>
-									<Link key={++i} {...{to: list.href, target: '_blank'}}>{list.content}</Link>
-								</When>
-								<Otherwise>
-									<a key={++i} {...{href: list.href, target: '_blank'}}>{list.content}</a>
-								</Otherwise>
-							</Choose>
-						</For>
-					</div>
-				</For>
-				<div>
-					<img src={visa} alt=""/>
-					<img src={MasterCard} alt=""/>
-				</div>
-			</section>
-			<section className={styles.downPart}>
-				<div>
-					<img src={logoGray} alt=""/>
-					<span>ReSell</span>
-				</div>
-				<div>
-					<p>
-						<Link to="/confidential">
-							Отказ от ответственности <br/>
-							Пользовательское соглашение
-						</Link>
-					</p>
-					<div>
-						<a>
-							<img src={facebook} alt=""/>
-						</a>
-						<a>
-							<img src={twitter} alt=""/>
-						</a>
-						<a>
-							<img src={insta} alt=""/>
-						</a>
-					</div>
-				</div>
-			</section>
-		</article>
-		<div className={styles.copyright_box}>
-
+		<div className={styles.footerTopBar}>
 			<div className={styles.container}>
-
-				<div className={styles.copyright }>
-
-					<div className={styles.copyright_text}>
-						Copyright © 2020. eLab WordPress Theme by StylemixThemes
+				<div className={styles.contactsContainer}>
+					<div className={styles.contactsItem}>
+						<img src={skype} alt=''/>
+						<div>
+							<h6>Skype</h6>
+							<p>@skype_login</p>
+						</div>
 					</div>
-
+					<div className={styles.contactsItem}>
+						<img src={phone} alt=''/>
+						<div>
+							<h6>info-line</h6>
+							<p>0-800-999-23</p>
+						</div>
+					</div>
+					<div className={styles.contactsItem}>
+						<img src={mail} alt=''/>
+						<div>
+							<h6>email</h6>
+							<p>emeil@mail.com</p>
+						</div>
+					</div>
 				</div>
-
+				<form className={styles.subscribeForm}>
+					<input type='text' placeholder='Enter your email to subscribe' ></input>
+					<button type='submit'>Subscribe</button>
+				</form>
 			</div>
-
 		</div>
 	</footer>
