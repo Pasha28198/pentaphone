@@ -22,12 +22,22 @@ class Header extends Component {
 	constructor (props) {
 		super(props)
 		this.state = {
-			icon: false
+			icon: false,
+			mobileIconCat: false,
+			mobileIconLinks: false
 		}
 		this.toggleCategoryList = this.toggleCategoryList.bind(this)
+		this.toggleCanegotyMobileSidebar = this.toggleCanegotyMobileSidebar.bind(this)
+		this.toggleLinksMobileSidebar = this.toggleLinksMobileSidebar.bind(this)
 	}
 	toggleCategoryList () {
 		this.setState({icon: !this.state.icon})
+	}
+	toggleCanegotyMobileSidebar () {
+		this.setState({mobileIconCat: !this.state.mobileIconCat})
+	}
+	toggleLinksMobileSidebar () {
+		this.setState({mobileIconLinks: !this.state.mobileIconLinks})
 	}
 	render () {
 		const { currentLocation } = this.props
@@ -65,6 +75,10 @@ class Header extends Component {
 					location={currentLocation}
 					toggleList={this.toggleCategoryList}
 					icon={this.state.icon}
+					toggleCanegotyMobileSidebar = {this.toggleCanegotyMobileSidebar}
+					mobileIconCat={this.state.mobileIconCat}
+					toggleLinksMobileSidebar = {this.toggleLinksMobileSidebar}
+					mobileIconLinks = {this.state.mobileIconLinks}
 				/>
 			</header>
 		)

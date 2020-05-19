@@ -1,0 +1,52 @@
+.listOfCategoryMobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background: #fff;
+    z-index: 9999;
+    >div{  
+        
+        display: flex;
+        justify-content: flex-start;
+        font-size: 12px;
+        height: 51px;
+        font-weight: 600;
+        padding: 13px 15px 9px 32px;
+        border-bottom: 1px solid #f2f2f2;
+        align-items: center;
+        svg, img, a{
+            transition: transform .5s linear;
+        }
+        svg{
+            color: #6f42c1;
+            margin-right: 20px; 
+        }
+        img{
+            height: 18px;
+            margin-right: 20px;
+        }
+        a{
+            color: #4d4d4d;
+            
+        }
+        &:hover svg{
+            transform: translateX(8px);
+        }
+        &:hover img{
+            transform: translateX(8px);
+        }
+        &:hover a{
+            transform: translateX(8px);
+        }
+        &:hover .hiddenBlockContainer{
+            display: flex;
+            
+        }
+    }
+    :before{
+        content: '';
+        display: none;
+    }
+}

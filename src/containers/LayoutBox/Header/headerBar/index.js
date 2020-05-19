@@ -3,16 +3,18 @@ import styles from './styles.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
-import PropTypes from 'prop-types'
+import PropTypes, { func } from 'prop-types'
 
 import CategoryList from './categoryList'
 import MenuList from './ dropDownList/menuList'
 import ShopList from './ dropDownList/shopList'
 import PagesList from './ dropDownList/pagesList'
 import ElementsList from './ dropDownList/elementsList'
+import CategorySideBar from './categorySideBar'
+import Backdrop from './backdrop'
+import PagesLinksMobile from './pagesLinksMobile'
 
 const HeaderBar = (props) => {
-	console.log(window.innerWidth)
 	const classes = [styles.containerAdd, 'container']
 	const location = props.location
 
@@ -50,7 +52,7 @@ const HeaderBar = (props) => {
 							<div className={styles.toggleCat}>
 								<span>CATEGORIES</span>
 								{
-									(location === '' || location === '/')
+									(location === '' || location === '/' || window.innerWidth < 600)
 										? null
 										: <div
 											className={styles.toggleIcon}
@@ -69,8 +71,25 @@ const HeaderBar = (props) => {
 									? 	<CategoryList/>
 									: null
 							}
-							<div className={styles.mobileBurger}>
-								<FontAwesomeIcon icon={faBars} />
+							<div
+								className={styles.mobileBurger}
+								onClick={() => props.toggleCanegotyMobileSidebar()}
+							>
+								{
+									props.mobileIconCat
+										? <FontAwesomeIcon icon={faTimes} />
+										: <FontAwesomeIcon icon={faBars} />
+								}
+								{
+									props.mobileIconCat
+										? <CategorySideBar />
+										: null
+								}
+								{
+									props.mobileIconCat
+										? <Backdrop onClick={() => props.toggleCanegotyMobileSidebar()}/>
+										: null
+								}
 							</div>
 
 						</div>
@@ -81,8 +100,25 @@ const HeaderBar = (props) => {
 								{ renderLinks() }
 							</ul>
 						</div>
-						<div className={styles.linksMobile}>
-							<FontAwesomeIcon icon={faBars} />
+						<div
+							className={styles.linksMobile}
+							onClick={() => props.toggleLinksMobileSidebar()}
+						>
+							{
+								props.mobileIconLinks
+									? <FontAwesomeIcon icon={faTimes} />
+									: <FontAwesomeIcon icon={faBars} />
+							}
+							{
+								props.mobileIconLinks
+									? <PagesLinksMobile links={renderLinks} />
+									: null
+							}
+							{
+								props.mobileIconLinks
+									? <Backdrop onClick={() => props.toggleLinksMobileSidebar()}/>
+									: null
+							}
 						</div>
 					</div>
 				</div>
@@ -92,7 +128,11 @@ const HeaderBar = (props) => {
 }
 HeaderBar.propTypes = {
 	location: PropTypes.string,
-	toggleList: PropTypes.function,
-	icon: PropTypes.bool
+	toggleList: PropTypes.func,
+	toggleCanegotyMobileSidebar: PropTypes.func,
+	toggleLinksMobileSidebar: PropTypes.func,
+	icon: PropTypes.bool,
+	mobileIconCat: PropTypes.bool,
+	mobileIconLinks: PropTypes.bool
 }
 export default HeaderBar

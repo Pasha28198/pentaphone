@@ -98,4 +98,7 @@
 }        
 .clicked{
     background: rgba(89,91,212,1);
+    @media screen and (max-width: 600px) {
+        background: #fff;
+    }
 }
