@@ -64,3 +64,9 @@
     transform: rotate(45deg);
     transition: .3s ease;
 }
+@media screen and (max-width: 600px){
+    .sliderLatest{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

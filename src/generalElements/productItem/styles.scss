@@ -104,6 +104,7 @@
     &:hover .imgTwo{
         opacity: 1;
     }
+    
 }
 
     .prodItem{
@@ -153,6 +154,10 @@
         align-items: center;
         border-right: 1px solid #f2f2f2;
         transition: all .3s ease;
+        @media screen and(max-width: 600px){
+           max-width: 350px;
+           margin-bottom: 10px;
+        }
         @include saleGeneral();
         @include outOf(#fff, #2659cf);
         .info{
@@ -202,9 +207,16 @@
         transition: all .3s ease;
         @include saleGeneral(27px);
         @include outOf();
+        @media screen and (max-width: 600px){
+            flex: 0 0 100%;
+            margin: 0 0 10px;
+        }
         .info{
             width: 50%;
             padding-left: 15px;
+            @media screen and (max-width: 600px){
+                width: 70%;
+            }
             div{
                 border-top: none;
                 box-shadow: none;
@@ -248,6 +260,11 @@
         transition: all .3s ease;
         @include saleGeneral(27px);
         @include outOf(#fff, #2659cf);
+        @media screen and (max-width: 600px){
+            max-width: 200px;
+            margin: 0 5px 10px 0px;
+        }
+        
         .info{
             margin-top: 20px;
             padding: 0 15px;
@@ -274,7 +291,7 @@
             text-decoration: line-through;
         }
         
-            @include hideTimer();
+        @include hideTimer();
         
         @include hiddenIcons();
     }
@@ -316,6 +333,7 @@
         }
         @include hideTimer();
         @include hiddenIcons();
+       
     }
     // styles for prod item latestProd
     .latestProd{
@@ -367,6 +385,9 @@
         width: 33.33333%;
         border-right: 1px solid #f2f2f2;
         transition: all .3s ease;
+        @media screen and (max-width: 600px){
+            width: 100%;
+        }
         @include saleGeneral();
         @include outOf(#fff, #2659cf);
         .info{
@@ -410,6 +431,11 @@
         min-width: 150px;
         margin: 0 5px;
         transition: all .3s ease;
+        @media screen and (max-width: 600px){
+            max-width: none;
+            min-width: auto;
+            max-height: 370px;
+        }
         @include saleGeneral();
         @include outOf();
         .info{

@@ -33,8 +33,27 @@ const RecentlyViewed = () => {
 		speed: 500,
 		slidesToShow: 6,
 		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		nextArrow: <SampleNextArrow />,
-		prevArrow: <SamplePrevArrow />
+		prevArrow: <SamplePrevArrow />,
+		responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					initialSlide: 2
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	}
 	return (
 		<React.Fragment>

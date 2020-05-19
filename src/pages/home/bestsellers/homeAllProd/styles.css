@@ -60,3 +60,19 @@ ul.dots{
     border: none;
     border-radius: 50%;
 }
+@media screen and (max-width: 600px){
+    .bestsellersCont{
+        flex-wrap: wrap-reverse;
+    }
+    .sliderContainer{
+        max-width: 100%;
+        margin-right: 0px;   
+    }
+    .long{
+        flex-wrap: wrap;
+    }
+    .thin{
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+}
